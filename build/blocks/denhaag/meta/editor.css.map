@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks/denhaag/meta/editor.css","mappings":"AAAA,kCACC,cACD,C","sources":["webpack://nlds-community-blocks/./src/blocks/denhaag/meta/assets/styles/editor.scss"],"sourcesContent":[".denhaag-meta__meta .denhaag-icon {\n\tfont-size: 20px;\n}\n"],"names":[],"sourceRoot":""}

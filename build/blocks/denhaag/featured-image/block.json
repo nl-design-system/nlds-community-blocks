@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Featured image",
+  "description": "Render the featured image.",
+  "icon": "format-image",
+  "name": "ncb-denhaag/featured-image",
+  "category": "nlds-community-denhaag-blocks",
+  "textdomain": "nlds-community-blocks",
+  "attributes": {
+    "size": {
+      "type": "string",
+      "default": "full"
+    }
+  },
+  "keywords": [
+    "denhaag",
+    "image",
+    "featured"
+  ],
+  "supports": {
+    "className": false,
+    "customClassName": false,
+    "html": false,
+    "multiple": false
+  },
+  "style": [
+    "ncb-denhaag-featured-image-block",
+    "ncb-denhaag-image-block"
+  ],
+  "editorStyle": [
+    "ncb-denhaag-featured-image-editor"
+  ],
+  "version": "1.0.0"
+}

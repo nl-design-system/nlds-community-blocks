@@ -1,0 +1,62 @@
+[data-type="ncb-denhaag/embed-youtube"] {
+	display: flex;
+	flex-direction: column;
+}
+
+.denhaag-embed-youtube {
+	float: left;
+}
+
+.denhaag-embed-youtube--no-video {
+	background-color: var(--denhaag-color-grey-1);
+	border: 0.125rem solid #e0e0e0;
+	display: grid;
+	place-items: center;
+	gap: 1.5rem;
+	padding: 1rem;
+}
+
+.denhaag-embed-youtube__input {
+	border: 1px solid #e0e0e0;
+	border-radius: .1875rem;
+	padding: .5rem;
+	background: #fff;
+}
+
+.denhaag-embed-youtube__details {
+	--ncb-dey-svg-transform: 1;
+
+	border: 1px solid #e0e0e0;
+
+	.is-selected & {
+		margin-block-end: 1rem;
+	}
+
+	&[open] {
+		--ncb-dey-svg-transform: -1;
+	}
+
+	svg {
+		transform: scaleY(var(--ncb-dey-svg-transform));
+		transition: transform 250ms ease-in-out;
+	}
+}
+
+.denhaag-embed-youtube__summary {
+	align-items: center;
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 1em;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+}
+
+.denhaag-embed-youtube__content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding-inline: 1rem;
+	padding-block-end: 1rem;
+}

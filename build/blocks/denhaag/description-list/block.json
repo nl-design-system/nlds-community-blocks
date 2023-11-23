@@ -1,0 +1,37 @@
+{
+  "title": "Description list",
+  "description": "A list with two columns. Like a small table.",
+  "icon": "block-table",
+  "name": "ncb-denhaag/description-list",
+  "category": "nlds-community-denhaag-blocks",
+  "textdomain": "nlds-community-blocks",
+  "attributes": {
+    "caption": {
+      "type": "string",
+      "source": "html",
+      "selector": ".denhaag-description-list-caption"
+    },
+    "id": {
+      "type": "string",
+      "default": null
+    }
+  },
+  "supports": {
+    "className": false,
+    "customClassName": false,
+    "html": false
+  },
+  "style": [
+    "ncb-denhaag-description-list-block",
+    "ncb-denhaag-link"
+  ],
+  "editorStyle": [
+    "ncb-denhaag-description-list-block-editor"
+  ],
+  "keywords": [
+    "denhaag",
+    "list",
+    "table"
+  ],
+  "version": "2.0.0"
+}

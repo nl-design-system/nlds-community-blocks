@@ -1,0 +1,48 @@
+.denhaag-link-group {
+	box-shadow: 0 0 0 2px #e0e0e0;
+	font-family: var(--denhaag-typography-sans-serif-font-family);
+	padding-inline-start: 8px;
+	padding-inline-end: 8px;
+
+	// `.denhaag-highlighted-links` shares the `.denhaag-link-group` CSS selector.
+	&:not(.denhaag-highlighted-links) {
+		padding-block-start: 8px;
+		padding-block-end: 8px;
+	}
+
+	&__list {
+		list-style: none !important;
+		padding-inline-start: 0 !important;
+	}
+
+	&__list .block-editor-block-list__block {
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+
+	&__list-item {
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+
+	&__caption {
+		margin-block-start: 0 !important;
+		margin-block-end: 0 !important;
+	}
+
+	.block-editor-block-list__block {
+		margin: 0 !important;
+	}
+
+	.block-list-appender {
+		position: static;
+	}
+}
+
+.denhaag-link-group--dark {
+	background-color: #2d2d2d;
+
+	.denhaag-link-group__caption {
+		color: #f8d62d !important;
+	}
+}

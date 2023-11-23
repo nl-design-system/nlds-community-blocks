@@ -1,0 +1,48 @@
+{
+    "title" : "Accordion",
+    "description" : "An accordion is a vertically stacked list of headers that reveal or hide associated sections of content.",
+    "name" : "ncb-denhaag/accordion",
+    "category" : "nlds-community-denhaag-blocks",
+    "icon" : "menu",
+    "attributes" : {
+        "tag" : {
+            "type" : "number",
+            "default" : 3
+        },
+        "allowedTags" : {
+            "type" : "array",
+            "default" : [
+                3,
+                4
+            ]
+        }
+    },
+    "example" : {
+        "attributes" : {
+            "title" : "Example heading"
+        }
+    },
+    "providesContext" : {
+        "ncb-denhaag/accordion-heading" : "tag"
+    },
+    "keywords" : [
+        "denhaag",
+        "collapse"
+    ],
+    "supports" : {
+        "className" : false,
+        "customClassName" : false,
+        "html" : false
+    },
+    "style" : [
+        "ncb-denhaag-accordion-block"
+    ],
+    "editorStyle" : [
+        "ncb-denhaag-accordion-block-editor"
+    ],
+    "viewScript" : [
+        "ncb-denhaag-accordion-block"
+    ],
+    "textdomain" : "nlds-community-blocks",
+    "version" : "1.3.0"
+}

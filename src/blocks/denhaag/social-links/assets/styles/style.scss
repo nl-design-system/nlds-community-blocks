@@ -1,0 +1,41 @@
+.denhaag-socials {
+	column-gap: var(--denhaag-space-block-3xl);
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	row-gap: var(--denhaag-space-block-md);
+
+	@media (min-width: 991px) {
+		column-gap: var(--denhaag-space-block-md);
+	}
+
+	[class^='utrecht-heading-'] + &,
+	[class*=' utrecht-heading-'] + & {
+		margin-block-start: var(--denhaag-space-block-xs);
+	}
+}
+
+.denhaag-socials__link {
+	color: var(--denhaag-color-blue-3);
+	line-height: 0;
+
+	footer & {
+		color: var(--denhaag-color-white);
+	}
+}
+
+.denhaag-socials__link:hover {
+	color: var(--denhaag-color-blue-4);
+
+	footer & {
+		color: var(--denhaag-color-ocher-2);
+	}
+}
+
+.denhaag-socials__link:focus-visible {
+	outline: var(--denhaag-link-focus-outline);
+}
+
+.denhaag-socials__icon {
+	fill: currentcolor;
+}

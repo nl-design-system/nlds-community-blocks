@@ -1,0 +1,35 @@
+{
+  "title": "Description list item",
+  "description": "description-list-row",
+  "icon": "minus",
+  "name": "ncb-denhaag/description-list-item",
+  "category": "nlds-community-denhaag-blocks",
+  "textdomain": "nlds-community-blocks",
+  "parent": [
+	"ncb-denhaag/description-list"
+  ],
+  "attributes": {
+	"title": {
+	  "type": "string",
+	  "source": "html",
+	  "selector": "dt"
+	},
+	"detail": {
+	  "type": "string",
+	  "source": "html",
+	  "selector": "dd"
+	}
+  },
+  "example": {
+	"attributes": {
+	  "title": "Beast of Bodmin",
+	  "detail": "A Large feline inhabiting Bodmin Moor."
+	}
+  },
+  "supports": {
+	"className": false,
+	"customClassName": false,
+	"html": false
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "title": "Heading",
+  "description": "heading block description",
+  "name": "ncb-denhaag/heading",
+  "category": "nlds-community-denhaag-blocks",
+  "attributes": {
+	"allowedTags": {
+	  "type": "array",
+	  "default": [
+		2,
+		3,
+		4,
+		5
+	  ]
+	},
+	"content": {
+	  "type": "string",
+	  "source": "text",
+	  "selector": "h1, h2, h3, h4, h5, h6"
+	},
+	"tag": {
+	  "type": "number",
+	  "default": 2
+	},
+	"tagShownAs": {
+	  "type": "number",
+	  "default": 2
+	},
+	"srOnly": {
+	  "type": "boolean",
+	  "default": false
+	}
+  },
+  "example": {
+	"attributes": {
+	  "content": "This shows the default heading content."
+	}
+  },
+  "variations": [
+	{
+	  "name": "ncb-denhaag/heading-screenreader",
+	  "title": "Screenreaders heading",
+	  "attributes": {
+		"srOnly": true
+	  },
+	  "example": {
+		"attributes": {
+		  "content": "This heading is only visible for Screenreaders."
+		}
+	  }
+	}
+  ],
+  "style": [
+	"ncb-denhaag-typography"
+  ],
+  "editorStyle": [
+	"ncb-denhaag-heading-block-editor"
+  ],
+  "supports": {
+	"className": false,
+	"customClassName": false,
+	"html": false
+  },
+  "keywords": [
+	"denhaag",
+	"heading",
+	"title"
+  ],
+  "textdomain": "nlds-community-blocks",
+  "version": "2.0.0"
+}

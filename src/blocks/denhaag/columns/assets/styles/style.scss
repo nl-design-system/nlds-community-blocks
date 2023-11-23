@@ -1,0 +1,62 @@
+.denhaag-columns {
+	padding-block-start: var(--denhaag-columns-padding-block-start, 32px);
+	padding-block-end: var(--denhaag-columns-padding-block-end, 32px);
+	display: grid;
+	gap: var(--denhaag-columns-gap, 32px);
+	grid-template-columns: var(--denhaag-columns-grid-template, 1fr);
+
+	@media (min-width: 768px) {
+		&,
+		&--single {
+			--denhaag-columns-grid-template: 1fr;
+		}
+
+		&--fifty-fifty {
+			--denhaag-columns-grid-template: 1fr 1fr;
+		}
+
+		&--one-third-two-third {
+			--denhaag-columns-grid-template: 1fr 2fr;
+
+			.denhaag-column:first-child {
+				--denhaag-image-download-text-display-desktop: none;
+			}
+		}
+
+		&--two-third-one-third {
+			--denhaag-columns-grid-template: 2fr 1fr;
+
+			.denhaag-column:last-child {
+				--denhaag-image-download-text-display-desktop: none;
+			}
+		}
+
+		&--one-third-one-third-one-third {
+			--denhaag-columns-grid-template: 1fr 1fr 1fr;
+			--denhaag-image-download-text-display-desktop: none;
+		}
+	}
+
+	& + &,
+	[class^='utrecht-heading-']:not(.sr-only) + & {
+		--denhaag-columns-padding-block-start: 0;
+	}
+
+	@media (min-width: 768px) {
+		.denhaag-highlighted-links + .sr-only + & {
+			--denhaag-columns-padding-block-start: 3.75rem;
+		}
+	}
+
+	& + [class^='utrecht-heading-']:not(.sr-only) {
+		--denhaag-columns-padding-block-start: 2rem;
+
+		@media (min-width: 375px) {
+			--denhaag-columns-padding-block-start: 2.5rem;
+		}
+
+		@media (min-width: 768px) {
+			--denhaag-columns-padding-block-start: 4rem;
+		}
+	}
+}

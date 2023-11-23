@@ -1,0 +1,1279 @@
+# Copyright (C) 2023 Acato
+# This file is distributed under the same license as the NL Design System Community Blocks plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: NL Design System Community Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nlds-community-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-06-07T13:26:28+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: nlds-community-blocks\n"
+
+#. Plugin Name of the plugin
+msgid "NL Design System Community Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://nldesignsystem.nl/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds NL Design System Community Blocks to the Gutenberg editor."
+msgstr ""
+
+#. Author of the plugin
+msgid "Acato"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.acato.nl"
+msgstr ""
+
+#: admin/class-admin.php:175
+msgctxt "Settings page warning"
+msgid "Load tokens from:"
+msgstr ""
+
+#: admin/class-admin.php:181
+msgctxt "Settings page warning"
+msgid "Disable default WordPress Block style:"
+msgstr ""
+
+#: admin/class-admin.php:240
+msgctxt "Settings page description"
+msgid "Select the municipality whose tokens you want to load."
+msgstr ""
+
+#: admin/class-admin.php:270
+msgctxt "Settings page description"
+msgid "Some default WordPress Block styles can overwrite the NLDS block styles."
+msgstr ""
+
+#: frontend/class-frontend.php:37
+msgid "NLDS Community Blocks"
+msgstr ""
+
+#: frontend/class-frontend.php:42
+msgid "NLDS Community Layout Blocks"
+msgstr ""
+
+#. translators: %s Community slug.
+#: frontend/class-frontend.php:63
+msgctxt "Register custom block category"
+msgid "NLDS %s Community Blocks"
+msgstr ""
+
+#. translators: %s Community slug.
+#: frontend/class-frontend.php:70
+msgctxt "Register custom block category"
+msgid "NLDS %s Community Layout Blocks"
+msgstr ""
+
+#: functions/ncb-filter-denhaag-content-links.php:90
+#: src/blocks/denhaag/button/template.php:45
+#: src/blocks/denhaag/link-group-item/template.php:55
+#: src/blocks/denhaag/social-link/template.php:55
+msgctxt "Screenreader label"
+msgid "(External link)"
+msgstr ""
+
+#: src/blocks/denhaag/embed-youtube/template.php:48
+msgctxt "denhaag/embed-youtube title"
+msgid "YouTube Video"
+msgstr ""
+
+#. translators: %1$s Image title, $2$s File extension, %3$s File size.
+#: src/blocks/denhaag/image/template.php:59
+msgctxt "Image"
+msgid "Download image: %1$s (%2$s, %3$s)"
+msgstr ""
+
+#. translators: $1$s File extension, %2$s File size.
+#: src/blocks/denhaag/image/template.php:61
+msgctxt "Image"
+msgid "Download image: (%1$s, %2$s)"
+msgstr ""
+
+#: src/blocks/denhaag/image/template.php:94
+#: build/index.js:4651
+#: src/blocks/denhaag/image/assets/scripts/edit.js:146
+#: build/index.js:2993
+msgctxt "denhaag/image: Download label"
+msgid "Download image"
+msgstr ""
+
+#. translators: %s Social media platform name.
+#: src/blocks/denhaag/meta/template.php:47
+#: src/blocks/denhaag/meta/template.php:60
+#: src/blocks/denhaag/meta/template.php:73
+msgctxt "denhaag/meta social share aria-label"
+msgid "Share this page on %s"
+msgstr ""
+
+#. translators: %s share by email label.
+#: src/blocks/denhaag/meta/template.php:86
+msgctxt "denhaag/meta social share aria-label"
+msgid "Share this page by %s"
+msgstr ""
+
+#: src/blocks/denhaag/meta/template.php:157
+#: build/index.js:5207
+#: src/blocks/denhaag/meta/assets/scripts/components/ncb-denhaag-meta-share-preview.js:39
+#: build/index.js:3421
+msgctxt "denhaag/meta: Share button label"
+msgid "Share"
+msgstr ""
+
+#: src/blocks/denhaag/note/template.php:32
+msgctxt "denhaag/note"
+msgid "Pay attention!"
+msgstr ""
+
+#: src/blocks/denhaag/note/template.php:32
+msgctxt "denhaag/note"
+msgid "Important information:"
+msgstr ""
+
+#. translators: %s The Socialmedia platform name from the we generated from the URL input.
+#: src/blocks/denhaag/social-link/template.php:54
+msgctxt "denhaag/social-link: aria label"
+msgid "Follow us on %s"
+msgstr ""
+
+#: build/index.js:1889
+#: src/blocks/denhaag/accordion-item/assets/scripts/edit.js:66
+#: build/index.js:971
+msgctxt "denhaag/accordion-item: Placeholder"
+msgid "Panel title…"
+msgstr ""
+
+#: build/index.js:2068
+#: src/blocks/denhaag/blockquote/assets/scripts/controls/ncb-blockquote-has-author-control.js:21
+#: build/index.js:1080
+msgctxt "NCB_HasAuthorControl label"
+msgid "Quote without author"
+msgstr ""
+
+#: build/index.js:2068
+#: src/blocks/denhaag/blockquote/assets/scripts/controls/ncb-blockquote-has-author-control.js:21
+#: build/index.js:1080
+msgctxt "NCB_HasAuthorControl label"
+msgid "Quote with author"
+msgstr ""
+
+#: build/index.js:2144
+#: src/blocks/denhaag/blockquote/assets/scripts/edit.js:46
+#: build/index.js:1137
+msgctxt "denhaag/blockquote: Quote placeholder"
+msgid "Add quote text here"
+msgstr ""
+
+#: build/index.js:2154
+#: src/blocks/denhaag/blockquote/assets/scripts/edit.js:57
+#: build/index.js:1148
+msgctxt "denhaag/blockquote: Author placeholder"
+msgid "Author name…"
+msgstr ""
+
+#: build/index.js:2385
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-icon-before-control.js:21
+#: build/index.js:1285
+msgctxt "denhaag/button: Control label"
+msgid "after"
+msgstr ""
+
+#: build/index.js:2385
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-icon-before-control.js:26
+#: build/index.js:1290
+msgctxt "denhaag/button: Control label"
+msgid "before"
+msgstr ""
+
+#: build/index.js:2391
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-icon-before-control.js:38
+#: build/index.js:1302
+msgctxt "denhaag/button: Control label"
+msgid "Set the icon %s the label"
+msgstr ""
+
+#: build/index.js:2444
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-icon-control.js:21
+#: build/index.js:1339
+msgctxt "denhaag/button: Control label"
+msgid "Hide"
+msgstr ""
+
+#: build/index.js:2444
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-icon-control.js:26
+#: build/index.js:1344
+msgctxt "denhaag/button: Control label"
+msgid "Show"
+msgstr ""
+
+#: build/index.js:2450
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-icon-control.js:40
+#: build/index.js:1358
+msgctxt "denhaag/button: Control label"
+msgid "icon"
+msgstr ""
+
+#: build/index.js:2524
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-size-control.js:43
+#: build/index.js:1416
+msgctxt "denhaag/button: Control label"
+msgid "Default"
+msgstr ""
+
+#: build/index.js:2527
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-size-control.js:46
+#: build/index.js:1419
+msgctxt "denhaag/button: Control label"
+msgid "Large"
+msgstr ""
+
+#: build/index.js:2535
+#: build/index.js:2603
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-size-control.js:55
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-variant-control.js:34
+#: build/index.js:1428
+#: build/index.js:1473
+msgctxt "denhaag/button: Control label"
+msgid "Set %s button style"
+msgstr ""
+
+#: build/index.js:2589
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-variant-control.js:19
+#: build/index.js:1458
+msgctxt "denhaag/button: Control label"
+msgid "Primary"
+msgstr ""
+
+#: build/index.js:2593
+#: src/blocks/denhaag/button/assets/scripts/controls/ncb-button-variant-control.js:23
+#: build/index.js:1462
+msgctxt "denhaag/button: Control label"
+msgid "Secondary"
+msgstr ""
+
+#: build/index.js:2737
+#: build/index.js:2749
+#: src/blocks/denhaag/button/assets/scripts/edit.js:116
+#: src/blocks/denhaag/button/assets/scripts/edit.js:131
+#: build/index.js:1600
+#: build/index.js:1615
+msgctxt "denhaag/button: Placeholder"
+msgid "Button label…"
+msgstr ""
+
+#: build/index.js:2964
+#: src/blocks/denhaag/columns/assets/scripts/controls/ncb-columns-layout-control.js:19
+#: build/index.js:1755
+msgctxt "denhaag/columns: Control prefix"
+msgid "Select %s"
+msgstr ""
+
+#: build/index.js:3074
+#: src/blocks/denhaag/columns/assets/scripts/edit.js:70
+#: build/index.js:1872
+msgctxt "denhaag/columns: Title"
+msgid "Please select a layout"
+msgstr ""
+
+#: build/index.js:3147
+#: src/blocks/denhaag/description-list-item/assets/scripts/edit.js:17
+#: build/index.js:1920
+msgctxt "denhaag/description-list-item: Placeholder"
+msgid "Title here…"
+msgstr ""
+
+#: build/index.js:3156
+#: src/blocks/denhaag/description-list-item/assets/scripts/edit.js:25
+#: build/index.js:1928
+msgctxt "denhaag/description-list-item: Placeholder"
+msgid "Details here…"
+msgstr ""
+
+#: build/index.js:3281
+#: src/blocks/denhaag/description-list/assets/scripts/edit.js:33
+#: build/index.js:1992
+msgctxt "denhaag/description-list: Placeholder"
+msgid "Caption…"
+msgstr ""
+
+#: build/index.js:3487
+#: build/index.js:3712
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-autoplay-control.js:17
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-portrait-control.js:16
+#: build/index.js:2096
+#: build/index.js:2223
+msgid "Disable"
+msgstr ""
+
+#: build/index.js:3487
+#: build/index.js:3712
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-autoplay-control.js:17
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-portrait-control.js:16
+#: build/index.js:2096
+#: build/index.js:2223
+msgid "Enable"
+msgstr ""
+
+#: build/index.js:3490
+#: build/index.js:3715
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-autoplay-control.js:21
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-portrait-control.js:20
+#: build/index.js:2100
+#: build/index.js:2227
+msgid "%s autoplay"
+msgstr ""
+
+#: build/index.js:3543
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-controls-control.js:17
+#: build/index.js:2127
+msgid "Hide"
+msgstr ""
+
+#: build/index.js:3543
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-controls-control.js:17
+#: build/index.js:2127
+msgid "Show"
+msgstr ""
+
+#: build/index.js:3546
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-controls-control.js:22
+#: build/index.js:2132
+msgid "%s video controls"
+msgstr ""
+
+#: build/index.js:3599
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-loop-control.js:17
+#: build/index.js:2159
+msgid "Unloop"
+msgstr ""
+
+#: build/index.js:3599
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-loop-control.js:17
+#: build/index.js:2159
+msgid "Loop"
+msgstr ""
+
+#: build/index.js:3602
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-loop-control.js:22
+#: build/index.js:2164
+msgid "%s video"
+msgstr ""
+
+#: build/index.js:3657
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-mute-control.js:18
+#: build/index.js:2192
+msgid "Muted"
+msgstr ""
+
+#: build/index.js:3657
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-mute-control.js:18
+#: build/index.js:2192
+msgid "Unmuted"
+msgstr ""
+
+#: build/index.js:3661
+#: src/blocks/denhaag/embed-youtube/assets/scripts/controls/ncb-embed-youtube-mute-control.js:23
+#: build/index.js:2197
+msgid "Set %s"
+msgstr ""
+
+#: build/index.js:4040
+#: src/blocks/denhaag/featured-image/assets/scripts/edit.js:80
+#: build/index.js:2530
+msgctxt "denhaag/featured-image: notice"
+msgid "This post type does not support a featured image"
+msgstr ""
+
+#: build/index.js:4049
+#: src/blocks/denhaag/featured-image/assets/scripts/edit.js:96
+#: build/index.js:2546
+msgctxt "denhaag/featured-image: MediaPlaceholder"
+msgid "Featured Image"
+msgstr ""
+
+#: build/index.js:4050
+#: src/blocks/denhaag/featured-image/assets/scripts/edit.js:97
+#: build/index.js:2547
+msgctxt "denhaag/featured-image: MediaPlaceholder"
+msgid "Upload an image by the button or select one from your media library."
+msgstr ""
+
+#: build/index.js:4149
+#: src/blocks/denhaag/heading/assets/scripts/controls/ncb-heading-screenreader-control.js:20
+#: build/index.js:2617
+msgctxt "denhaag/heading: Control label"
+msgid "Visible for screen readers only"
+msgstr ""
+
+#: build/index.js:4204
+#: src/blocks/denhaag/heading/assets/scripts/edit.js:28
+#: build/index.js:2657
+msgctxt "denhaag/heading: Placeholder"
+msgid "Enter your heading…"
+msgstr ""
+
+#: build/index.js:4377
+#: src/blocks/denhaag/image/assets/scripts/controls/ncb-image-caption-control.js:22
+#: build/index.js:2766
+msgctxt "denhaag/image: Control label"
+msgid "Show image caption"
+msgstr ""
+
+#: build/index.js:4433
+#: src/blocks/denhaag/image/assets/scripts/controls/ncb-image-download-control.js:22
+#: build/index.js:2801
+msgctxt "denhaag/image: Control label"
+msgid "Show download option"
+msgstr ""
+
+#: build/index.js:4490
+#: src/blocks/denhaag/image/assets/scripts/controls/ncb-image-reset-control.js:21
+#: build/index.js:2835
+msgctxt "denhaag/image: Control label"
+msgid "Reset image"
+msgstr ""
+
+#: build/index.js:4635
+#: src/blocks/denhaag/image/assets/scripts/edit.js:125
+#: build/index.js:2972
+msgctxt "denhaag/image: Caption placeholder"
+msgid "Place your caption here"
+msgstr ""
+
+#: build/index.js:4771
+#: src/blocks/denhaag/link-group-item/assets/scripts/edit.js:70
+#: build/index.js:3087
+msgctxt "denhaag/link-group-item: Instruction"
+msgid "Click the icon to add a link."
+msgstr ""
+
+#: build/index.js:4785
+#: src/blocks/denhaag/link-group-item/assets/scripts/edit.js:87
+#: build/index.js:3104
+msgctxt "denhaag/link-group: Control label"
+msgid "Start typing…"
+msgstr ""
+
+#: build/index.js:4945
+#: src/blocks/denhaag/link-group/assets/scripts/controls/ncb-link-group-image-reset-control.js:21
+#: build/index.js:3209
+msgctxt "denhaag/link-group: Control label"
+msgid "Reset image"
+msgstr ""
+
+#: build/index.js:5037
+#: src/blocks/denhaag/link-group/assets/scripts/edit.js:75
+#: build/index.js:3296
+msgctxt "denhaag/link-group: Caption placeholder"
+msgid "Place your caption here"
+msgstr ""
+
+#: build/index.js:5262
+#: src/blocks/denhaag/meta/assets/scripts/controls/ncb-meta-excerpt-control.js:24
+#: build/index.js:3457
+msgctxt "denhaag/meta: Control label"
+msgid "Disable"
+msgstr ""
+
+#: build/index.js:5262
+#: src/blocks/denhaag/meta/assets/scripts/controls/ncb-meta-excerpt-control.js:29
+#: build/index.js:3462
+msgctxt "denhaag/meta: Control label"
+msgid "Enable"
+msgstr ""
+
+#: build/index.js:5262
+#: src/blocks/denhaag/meta/assets/scripts/controls/ncb-meta-excerpt-control.js:34
+#: build/index.js:3467
+msgctxt "denhaag/meta: Control label"
+msgid "Excerpt"
+msgstr ""
+
+#: build/index.js:5506
+#: src/blocks/denhaag/note/assets/scripts/edit.js:44
+#: build/index.js:3645
+msgctxt "denhaag/note: Placeholder"
+msgid "Write warning…"
+msgstr ""
+
+#: build/index.js:5506
+#: src/blocks/denhaag/note/assets/scripts/edit.js:45
+#: build/index.js:3646
+msgctxt "denhaag/note: Placeholder"
+msgid "Write notification…"
+msgstr ""
+
+#: build/index.js:5611
+#: src/blocks/denhaag/paragraph/assets/scripts/controls/ncb-paragraph-variation-control.js:18
+#: build/index.js:3717
+msgctxt "Variation denhaag/paragraph"
+msgid "Default"
+msgstr ""
+
+#: build/index.js:5614
+#: src/blocks/denhaag/paragraph/assets/scripts/controls/ncb-paragraph-variation-control.js:22
+#: build/index.js:3721
+msgctxt "Variation denhaag/paragraph"
+msgid "Lead"
+msgstr ""
+
+#: build/index.js:5617
+#: src/blocks/denhaag/paragraph/assets/scripts/controls/ncb-paragraph-variation-control.js:26
+#: build/index.js:3725
+msgctxt "Variation denhaag/paragraph"
+msgid "Small"
+msgstr ""
+
+#: build/index.js:5620
+#: src/blocks/denhaag/paragraph/assets/scripts/controls/ncb-paragraph-variation-control.js:30
+#: build/index.js:3729
+msgctxt "Variation denhaag/paragraph"
+msgid "Distanced"
+msgstr ""
+
+#: build/index.js:5623
+#: src/blocks/denhaag/paragraph/assets/scripts/controls/ncb-paragraph-variation-control.js:34
+#: build/index.js:3733
+msgctxt "Variation denhaag/paragraph"
+msgid "Den Haag Detail"
+msgstr ""
+
+#: build/index.js:5628
+#: build/index.js:5689
+#: src/blocks/denhaag/paragraph/assets/scripts/controls/ncb-paragraph-variation-control.js:42
+#: src/blocks/denhaag/paragraph/assets/scripts/controls/ncb-paragraph-variation-toolbar-control.js:23
+#: build/index.js:3741
+#: build/index.js:3774
+msgctxt "denhaag/paragraph: Toolbar Button label"
+msgid "Select variation"
+msgstr ""
+
+#: build/index.js:5754
+#: src/blocks/denhaag/paragraph/assets/scripts/edit.js:27
+#: build/index.js:3815
+msgctxt "denhaag/paragraph: Placeholder"
+msgid "Write paragraph…"
+msgstr ""
+
+#: build/index.js:5773
+#: src/blocks/denhaag/paragraph/assets/scripts/edit.js:49
+#: build/index.js:3837
+msgctxt "denhaag/paragraph: Panel Title"
+msgid "Variation"
+msgstr ""
+
+#: build/index.js:5910
+#: src/blocks/denhaag/social-link/assets/scripts/components/ncb-denhaag-social-link-icon.js:22
+#: build/index.js:3908
+msgctxt "denhaag/social-link icon: Notice"
+msgid "No link provided"
+msgstr ""
+
+#: build/index.js:5930
+#: src/blocks/denhaag/social-link/assets/scripts/components/ncb-denhaag-social-link-icon.js:44
+#: build/index.js:3930
+msgctxt "denhaag/social-link icon: Notice"
+msgid "This is an unsupported domain."
+msgstr ""
+
+#: build/index.js:6003
+#: src/blocks/denhaag/social-link/assets/scripts/edit.js:50
+#: build/index.js:3985
+msgctxt "denhaag/social-link: Instruction"
+msgid "Click the icon to add a link."
+msgstr ""
+
+#: build/index.js:6339
+#: src/editor/ncb-heading-tag-control/index.js:24
+#: build/index.js:4242
+msgctxt "denhaag/paragraph: ToolbarButton label"
+msgid "Set as heading %s"
+msgstr ""
+
+#: build/index.js:6339
+#: src/editor/ncb-heading-tag-control/index.js:25
+#: build/index.js:4243
+msgctxt "denhaag/paragraph: ToolbarButton label"
+msgid "Show as heading %s"
+msgstr ""
+
+#: build/index.js:6433
+#: build/index.js:6440
+#: src/editor/ncb-image-size-control.js:40
+#: src/editor/ncb-image-size-control.js:48
+#: build/index.js:4311
+#: build/index.js:4319
+msgctxt "NCB_ImageSizeControl label"
+msgid "Select image size"
+msgstr ""
+
+#: build/index.js:6536
+#: src/editor/ncb-link-control/assets/scripts/ncb-set-link-control.js:67
+#: build/index.js:4398
+msgctxt "NCB_SetLinkControl label"
+msgid "Add link"
+msgstr ""
+
+#: build/index.js:6623
+#: src/editor/ncb-link-control/assets/scripts/ncb-unset-link-control.js:19
+#: build/index.js:4468
+msgctxt "NCB_UnsetLinkControl label"
+msgid "Remove link"
+msgstr ""
+
+#: src/blocks/denhaag/table/assets/scripts/controls/ncb-denhaag-table-layout-control.js:12
+msgctxt "denhaag/table: Button label"
+msgid "Set first row as heading"
+msgstr ""
+
+#: src/blocks/denhaag/table/assets/scripts/controls/ncb-denhaag-table-layout-control.js:17
+msgctxt "denhaag/table: Button label"
+msgid "Set first column as heading"
+msgstr ""
+
+#: src/blocks/denhaag/table/assets/scripts/controls/ncb-denhaag-table-layout-control.js:22
+msgctxt "denhaag/table: Button label"
+msgid "Set first columns and row as heading"
+msgstr ""
+
+#: src/blocks/denhaag/table/assets/scripts/edit.js:155
+msgctxt "denhaag/table: Placeholder"
+msgid "Caption label (optional)"
+msgstr ""
+
+#: build/blocks/denhaag/accordion-item/block.json
+#: src/blocks/denhaag/accordion-item/block.json
+msgctxt "block title"
+msgid "Accordion item"
+msgstr ""
+
+#: build/blocks/denhaag/accordion-item/block.json
+#: src/blocks/denhaag/accordion-item/block.json
+msgctxt "block description"
+msgid "A singular accordion-item within the accordion group."
+msgstr ""
+
+#: build/blocks/denhaag/accordion/block.json
+#: src/blocks/denhaag/accordion/block.json
+msgctxt "block title"
+msgid "Accordion"
+msgstr ""
+
+#: build/blocks/denhaag/accordion/block.json
+#: src/blocks/denhaag/accordion/block.json
+msgctxt "block description"
+msgid "An accordion is a vertically stacked list of headers that reveal or hide associated sections of content."
+msgstr ""
+
+#: build/blocks/denhaag/accordion/block.json
+#: build/blocks/denhaag/blockquote/block.json
+#: build/blocks/denhaag/button-group/block.json
+#: build/blocks/denhaag/column/block.json
+#: build/blocks/denhaag/columns/block.json
+#: build/blocks/denhaag/description-list/block.json
+#: build/blocks/denhaag/divider/block.json
+#: build/blocks/denhaag/embed-youtube/block.json
+#: build/blocks/denhaag/featured-image/block.json
+#: build/blocks/denhaag/heading/block.json
+#: build/blocks/denhaag/image/block.json
+#: build/blocks/denhaag/link-group-item/block.json
+#: build/blocks/denhaag/link-group/block.json
+#: build/blocks/denhaag/meta/block.json
+#: build/blocks/denhaag/note/block.json
+#: build/blocks/denhaag/paragraph/block.json
+#: build/blocks/denhaag/social-links/block.json
+#: build/blocks/denhaag/table/block.json
+#: src/blocks/denhaag/accordion/block.json
+#: src/blocks/denhaag/blockquote/block.json
+#: src/blocks/denhaag/button-group/block.json
+#: src/blocks/denhaag/column/block.json
+#: src/blocks/denhaag/columns/block.json
+#: src/blocks/denhaag/description-list/block.json
+#: src/blocks/denhaag/divider/block.json
+#: src/blocks/denhaag/embed-youtube/block.json
+#: src/blocks/denhaag/featured-image/block.json
+#: src/blocks/denhaag/heading/block.json
+#: src/blocks/denhaag/image/block.json
+#: src/blocks/denhaag/link-group-item/block.json
+#: src/blocks/denhaag/link-group/block.json
+#: src/blocks/denhaag/meta/block.json
+#: src/blocks/denhaag/note/block.json
+#: src/blocks/denhaag/paragraph/block.json
+#: src/blocks/denhaag/social-links/block.json
+#: src/blocks/denhaag/table/block.json
+msgctxt "block keyword"
+msgid "denhaag"
+msgstr ""
+
+#: build/blocks/denhaag/accordion/block.json
+#: src/blocks/denhaag/accordion/block.json
+msgctxt "block keyword"
+msgid "collapse"
+msgstr ""
+
+#: build/blocks/denhaag/blockquote/block.json
+#: src/blocks/denhaag/blockquote/block.json
+msgctxt "block title"
+msgid "Blockquote"
+msgstr ""
+
+#: build/blocks/denhaag/blockquote/block.json
+#: src/blocks/denhaag/blockquote/block.json
+msgctxt "block description"
+msgid "A quote component."
+msgstr ""
+
+#: build/blocks/denhaag/blockquote/block.json
+#: src/blocks/denhaag/blockquote/block.json
+msgctxt "block keyword"
+msgid "cite"
+msgstr ""
+
+#: build/blocks/denhaag/blockquote/block.json
+#: src/blocks/denhaag/blockquote/block.json
+msgctxt "block keyword"
+msgid "citation"
+msgstr ""
+
+#: build/blocks/denhaag/blockquote/block.json
+#: src/blocks/denhaag/blockquote/block.json
+msgctxt "block keyword"
+msgid "quote"
+msgstr ""
+
+#: build/blocks/denhaag/button-group/block.json
+#: src/blocks/denhaag/button-group/block.json
+msgctxt "block title"
+msgid "Button group"
+msgstr ""
+
+#: build/blocks/denhaag/button-group/block.json
+#: src/blocks/denhaag/button-group/block.json
+msgctxt "block description"
+msgid "Button group for multiple buttons in a row."
+msgstr ""
+
+#: build/blocks/denhaag/button-group/block.json
+#: src/blocks/denhaag/button-group/block.json
+msgctxt "block keyword"
+msgid "button"
+msgstr ""
+
+#: build/blocks/denhaag/button-group/block.json
+#: src/blocks/denhaag/button-group/block.json
+msgctxt "block keyword"
+msgid "buttons"
+msgstr ""
+
+#: build/blocks/denhaag/button-group/block.json
+#: build/blocks/denhaag/link-group/block.json
+#: src/blocks/denhaag/button-group/block.json
+#: src/blocks/denhaag/link-group/block.json
+msgctxt "block keyword"
+msgid "group"
+msgstr ""
+
+#: build/blocks/denhaag/button/block.json
+#: src/blocks/denhaag/button/block.json
+msgctxt "block title"
+msgid "Button"
+msgstr ""
+
+#: build/blocks/denhaag/button/block.json
+#: src/blocks/denhaag/button/block.json
+msgctxt "block description"
+msgid "A button is an interactive element that makes it possible to get the expected interactive feedback from the system after a certain action."
+msgstr ""
+
+#: build/blocks/denhaag/column/block.json
+#: src/blocks/denhaag/column/block.json
+msgctxt "block title"
+msgid "Column"
+msgstr ""
+
+#: build/blocks/denhaag/column/block.json
+#: src/blocks/denhaag/column/block.json
+msgctxt "block description"
+msgid "A single column within a columns block."
+msgstr ""
+
+#: build/blocks/denhaag/column/block.json
+#: src/blocks/denhaag/column/block.json
+msgctxt "block keyword"
+msgid "column"
+msgstr ""
+
+#: build/blocks/denhaag/columns/block.json
+#: src/blocks/denhaag/columns/block.json
+msgctxt "block title"
+msgid "Columns"
+msgstr ""
+
+#: build/blocks/denhaag/columns/block.json
+#: src/blocks/denhaag/columns/block.json
+msgctxt "block description"
+msgid "Add a block that displays content in multiple columns, then add whatever content blocks you’d like."
+msgstr ""
+
+#: build/blocks/denhaag/columns/block.json
+#: src/blocks/denhaag/columns/block.json
+msgctxt "block keyword"
+msgid "columns"
+msgstr ""
+
+#: build/blocks/denhaag/description-list-item/block.json
+#: src/blocks/denhaag/description-list-item/block.json
+msgctxt "block title"
+msgid "Description list item"
+msgstr ""
+
+#: build/blocks/denhaag/description-list-item/block.json
+#: src/blocks/denhaag/description-list-item/block.json
+msgctxt "block description"
+msgid "description-list-row"
+msgstr ""
+
+#: build/blocks/denhaag/description-list/block.json
+#: src/blocks/denhaag/description-list/block.json
+msgctxt "block title"
+msgid "Description list"
+msgstr ""
+
+#: build/blocks/denhaag/description-list/block.json
+#: src/blocks/denhaag/description-list/block.json
+msgctxt "block description"
+msgid "A list with two columns. Like a small table."
+msgstr ""
+
+#: build/blocks/denhaag/description-list/block.json
+#: src/blocks/denhaag/description-list/block.json
+msgctxt "block keyword"
+msgid "list"
+msgstr ""
+
+#: build/blocks/denhaag/description-list/block.json
+#: build/blocks/denhaag/table/block.json
+#: src/blocks/denhaag/description-list/block.json
+#: src/blocks/denhaag/table/block.json
+msgctxt "block keyword"
+msgid "table"
+msgstr ""
+
+#: build/blocks/denhaag/divider/block.json
+#: src/blocks/denhaag/divider/block.json
+msgctxt "block title"
+msgid "Divider"
+msgstr ""
+
+#: build/blocks/denhaag/divider/block.json
+#: src/blocks/denhaag/divider/block.json
+msgctxt "block description"
+msgid "Divider description"
+msgstr ""
+
+#: build/blocks/denhaag/divider/block.json
+#: src/blocks/denhaag/divider/block.json
+msgctxt "block keyword"
+msgid "divider"
+msgstr ""
+
+#: build/blocks/denhaag/divider/block.json
+#: src/blocks/denhaag/divider/block.json
+msgctxt "block keyword"
+msgid "separator"
+msgstr ""
+
+#: build/blocks/denhaag/embed-youtube/block.json
+#: src/blocks/denhaag/embed-youtube/block.json
+msgctxt "block title"
+msgid "YouTube embed"
+msgstr ""
+
+#: build/blocks/denhaag/embed-youtube/block.json
+#: src/blocks/denhaag/embed-youtube/block.json
+msgctxt "block description"
+msgid "Embed a YouTube video"
+msgstr ""
+
+#: build/blocks/denhaag/embed-youtube/block.json
+#: src/blocks/denhaag/embed-youtube/block.json
+msgctxt "block keyword"
+msgid "video"
+msgstr ""
+
+#: build/blocks/denhaag/embed-youtube/block.json
+#: src/blocks/denhaag/embed-youtube/block.json
+msgctxt "block keyword"
+msgid "YouTube"
+msgstr ""
+
+#: build/blocks/denhaag/featured-image/block.json
+#: src/blocks/denhaag/featured-image/block.json
+msgctxt "block title"
+msgid "Featured image"
+msgstr ""
+
+#: build/blocks/denhaag/featured-image/block.json
+#: src/blocks/denhaag/featured-image/block.json
+msgctxt "block description"
+msgid "Render the featured image."
+msgstr ""
+
+#: build/blocks/denhaag/featured-image/block.json
+#: build/blocks/denhaag/image/block.json
+#: src/blocks/denhaag/featured-image/block.json
+#: src/blocks/denhaag/image/block.json
+msgctxt "block keyword"
+msgid "image"
+msgstr ""
+
+#: build/blocks/denhaag/featured-image/block.json
+#: src/blocks/denhaag/featured-image/block.json
+msgctxt "block keyword"
+msgid "featured"
+msgstr ""
+
+#: build/blocks/denhaag/heading/block.json
+#: src/blocks/denhaag/heading/block.json
+msgctxt "block title"
+msgid "Heading"
+msgstr ""
+
+#: build/blocks/denhaag/heading/block.json
+#: src/blocks/denhaag/heading/block.json
+msgctxt "block description"
+msgid "heading block description"
+msgstr ""
+
+#: build/blocks/denhaag/heading/block.json
+#: src/blocks/denhaag/heading/block.json
+msgctxt "block variation title"
+msgid "Screenreaders heading"
+msgstr ""
+
+#: build/blocks/denhaag/heading/block.json
+#: build/blocks/denhaag/meta/block.json
+#: src/blocks/denhaag/heading/block.json
+#: src/blocks/denhaag/meta/block.json
+msgctxt "block keyword"
+msgid "heading"
+msgstr ""
+
+#: build/blocks/denhaag/heading/block.json
+#: build/blocks/denhaag/meta/block.json
+#: src/blocks/denhaag/heading/block.json
+#: src/blocks/denhaag/meta/block.json
+msgctxt "block keyword"
+msgid "title"
+msgstr ""
+
+#: build/blocks/denhaag/image/block.json
+#: src/blocks/denhaag/image/block.json
+msgctxt "block title"
+msgid "Image"
+msgstr ""
+
+#: build/blocks/denhaag/image/block.json
+#: src/blocks/denhaag/image/block.json
+msgctxt "block description"
+msgid "Image with caption and/or with download link."
+msgstr ""
+
+#: build/blocks/denhaag/image/block.json
+#: src/blocks/denhaag/image/block.json
+msgctxt "block keyword"
+msgid "download"
+msgstr ""
+
+#: build/blocks/denhaag/image/block.json
+#: src/blocks/denhaag/image/block.json
+msgctxt "block keyword"
+msgid "caption"
+msgstr ""
+
+#: build/blocks/denhaag/image/block.json
+#: src/blocks/denhaag/image/block.json
+msgctxt "block variation title"
+msgid "Image with caption"
+msgstr ""
+
+#: build/blocks/denhaag/image/block.json
+#: src/blocks/denhaag/image/block.json
+msgctxt "block variation title"
+msgid "Image with download"
+msgstr ""
+
+#: build/blocks/denhaag/image/block.json
+#: src/blocks/denhaag/image/block.json
+msgctxt "block variation title"
+msgid "Image with caption and download"
+msgstr ""
+
+#: build/blocks/denhaag/link-group-item/block.json
+#: src/blocks/denhaag/link-group-item/block.json
+msgctxt "block title"
+msgid "Link group item"
+msgstr ""
+
+#: build/blocks/denhaag/link-group-item/block.json
+#: src/blocks/denhaag/link-group-item/block.json
+msgctxt "block description"
+msgid "A link from the link-group-item"
+msgstr ""
+
+#: build/blocks/denhaag/link-group-item/block.json
+#: src/blocks/denhaag/link-group-item/block.json
+msgctxt "block keyword"
+msgid "grouped"
+msgstr ""
+
+#: build/blocks/denhaag/link-group-item/block.json
+#: src/blocks/denhaag/link-group-item/block.json
+msgctxt "block keyword"
+msgid "link"
+msgstr ""
+
+#: build/blocks/denhaag/link-group/block.json
+#: src/blocks/denhaag/link-group/block.json
+msgctxt "block title"
+msgid "Link group"
+msgstr ""
+
+#: build/blocks/denhaag/link-group/block.json
+#: src/blocks/denhaag/link-group/block.json
+msgctxt "block description"
+msgid "A group of links with a heading and optional heading."
+msgstr ""
+
+#: build/blocks/denhaag/link-group/block.json
+#: build/blocks/denhaag/social-links/block.json
+#: src/blocks/denhaag/link-group/block.json
+#: src/blocks/denhaag/social-links/block.json
+msgctxt "block keyword"
+msgid "links"
+msgstr ""
+
+#: build/blocks/denhaag/meta/block.json
+#: src/blocks/denhaag/meta/block.json
+msgctxt "block title"
+msgid "Meta"
+msgstr ""
+
+#: build/blocks/denhaag/meta/block.json
+#: src/blocks/denhaag/meta/block.json
+msgctxt "block description"
+msgid "Showing the post meta"
+msgstr ""
+
+#: build/blocks/denhaag/meta/block.json
+#: src/blocks/denhaag/meta/block.json
+msgctxt "block keyword"
+msgid "date"
+msgstr ""
+
+#: build/blocks/denhaag/meta/block.json
+#: src/blocks/denhaag/meta/block.json
+msgctxt "block keyword"
+msgid "excerpt"
+msgstr ""
+
+#: build/blocks/denhaag/meta/block.json
+#: src/blocks/denhaag/meta/block.json
+msgctxt "block keyword"
+msgid "meta"
+msgstr ""
+
+#: build/blocks/denhaag/note/block.json
+#: src/blocks/denhaag/note/block.json
+msgctxt "block title"
+msgid "Notification"
+msgstr ""
+
+#: build/blocks/denhaag/note/block.json
+#: src/blocks/denhaag/note/block.json
+msgctxt "block description"
+msgid "A component to inform the visitor."
+msgstr ""
+
+#: build/blocks/denhaag/note/block.json
+#: src/blocks/denhaag/note/block.json
+msgctxt "block variation title"
+msgid "Notification: Warning"
+msgstr ""
+
+#: build/blocks/denhaag/note/block.json
+#: src/blocks/denhaag/note/block.json
+msgctxt "block variation description"
+msgid "A component to warn the visitor."
+msgstr ""
+
+#: build/blocks/denhaag/note/block.json
+#: src/blocks/denhaag/note/block.json
+msgctxt "block keyword"
+msgid "info"
+msgstr ""
+
+#: build/blocks/denhaag/note/block.json
+#: src/blocks/denhaag/note/block.json
+msgctxt "block keyword"
+msgid "information"
+msgstr ""
+
+#: build/blocks/denhaag/note/block.json
+#: src/blocks/denhaag/note/block.json
+msgctxt "block keyword"
+msgid "notification"
+msgstr ""
+
+#: build/blocks/denhaag/note/block.json
+#: src/blocks/denhaag/note/block.json
+msgctxt "block keyword"
+msgid "warning"
+msgstr ""
+
+#: build/blocks/denhaag/paragraph/block.json
+#: src/blocks/denhaag/paragraph/block.json
+msgctxt "block title"
+msgid "Paragraph"
+msgstr ""
+
+#: build/blocks/denhaag/paragraph/block.json
+#: src/blocks/denhaag/paragraph/block.json
+msgctxt "block description"
+msgid "Paragraph block description"
+msgstr ""
+
+#: build/blocks/denhaag/paragraph/block.json
+#: src/blocks/denhaag/paragraph/block.json
+msgctxt "block variation title"
+msgid "Small Paragraph"
+msgstr ""
+
+#: build/blocks/denhaag/paragraph/block.json
+#: src/blocks/denhaag/paragraph/block.json
+msgctxt "block variation title"
+msgid "Paragraph Lead"
+msgstr ""
+
+#: build/blocks/denhaag/paragraph/block.json
+#: src/blocks/denhaag/paragraph/block.json
+msgctxt "block variation title"
+msgid "Paragraph Distanced"
+msgstr ""
+
+#: build/blocks/denhaag/paragraph/block.json
+#: src/blocks/denhaag/paragraph/block.json
+msgctxt "block variation title"
+msgid "Paragraph Detail"
+msgstr ""
+
+#: build/blocks/denhaag/paragraph/block.json
+#: src/blocks/denhaag/paragraph/block.json
+msgctxt "block keyword"
+msgid "content"
+msgstr ""
+
+#: build/blocks/denhaag/paragraph/block.json
+#: src/blocks/denhaag/paragraph/block.json
+msgctxt "block keyword"
+msgid "text"
+msgstr ""
+
+#: build/blocks/denhaag/social-link/block.json
+#: src/blocks/denhaag/social-link/block.json
+msgctxt "block title"
+msgid "Social link"
+msgstr ""
+
+#: build/blocks/denhaag/social-link/block.json
+#: src/blocks/denhaag/social-link/block.json
+msgctxt "block description"
+msgid "Social link shown as an icon."
+msgstr ""
+
+#: build/blocks/denhaag/social-links/block.json
+#: src/blocks/denhaag/social-links/block.json
+msgctxt "block title"
+msgid "Social links"
+msgstr ""
+
+#: build/blocks/denhaag/social-links/block.json
+#: src/blocks/denhaag/social-links/block.json
+msgctxt "block description"
+msgid "Social links shown as an icon."
+msgstr ""
+
+#: build/blocks/denhaag/social-links/block.json
+#: src/blocks/denhaag/social-links/block.json
+msgctxt "block keyword"
+msgid "social"
+msgstr ""
+
+#: build/blocks/denhaag/table-body/block.json
+#: src/blocks/denhaag/table-body/block.json
+msgctxt "block title"
+msgid "Table Body"
+msgstr ""
+
+#: build/blocks/denhaag/table-body/block.json
+#: src/blocks/denhaag/table-body/block.json
+msgctxt "block description"
+msgid "Table Body"
+msgstr ""
+
+#: build/blocks/denhaag/table-cell/block.json
+#: src/blocks/denhaag/table-cell/block.json
+msgctxt "block title"
+msgid "Table cell"
+msgstr ""
+
+#: build/blocks/denhaag/table-cell/block.json
+#: src/blocks/denhaag/table-cell/block.json
+msgctxt "block description"
+msgid "Cell of a table"
+msgstr ""
+
+#: build/blocks/denhaag/table-head/block.json
+#: src/blocks/denhaag/table-head/block.json
+msgctxt "block title"
+msgid "Table Head"
+msgstr ""
+
+#: build/blocks/denhaag/table-head/block.json
+#: src/blocks/denhaag/table-head/block.json
+msgctxt "block description"
+msgid "Table Head"
+msgstr ""
+
+#: build/blocks/denhaag/table-row/block.json
+#: src/blocks/denhaag/table-row/block.json
+msgctxt "block title"
+msgid "Table row"
+msgstr ""
+
+#: build/blocks/denhaag/table-row/block.json
+#: src/blocks/denhaag/table-row/block.json
+msgctxt "block description"
+msgid "Table rows"
+msgstr ""
+
+#: build/blocks/denhaag/table/block.json
+#: src/blocks/denhaag/table/block.json
+msgctxt "block title"
+msgid "Den Haag Table"
+msgstr ""
+
+#: build/blocks/denhaag/table/block.json
+#: src/blocks/denhaag/table/block.json
+msgctxt "block description"
+msgid "A custom table block."
+msgstr ""

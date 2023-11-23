@@ -1,0 +1,72 @@
+{
+  "title": "Link group",
+  "description": "A group of links with a heading and optional heading.",
+  "icon": "editor-justify",
+  "name": "ncb-denhaag/link-group",
+  "category": "nlds-community-denhaag-blocks",
+  "attributes": {
+    "tag": {
+      "type": "number",
+      "default": 4,
+      "enum": [
+        2,
+        3,
+        4
+      ]
+    },
+    "caption": {
+      "type": "string",
+      "default": ""
+    },
+    "image": {
+      "type": "number",
+      "default": 0
+    },
+    "allowedTags": {
+      "type": "array",
+      "default": [
+        2,
+        3,
+        4
+      ],
+      "enum": [
+        2,
+        3,
+        4
+      ]
+    },
+    "tagShownAs": {
+      "type": "number",
+      "default": 4,
+      "enum": [
+        2,
+        3,
+        4
+      ]
+    },
+    "isDark": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "className": false,
+    "customClassName": false,
+    "html": false
+  },
+  "style": [
+    "ncb-denhaag-link-group-block",
+    "ncb-denhaag-heading-block"
+  ],
+  "editorStyle": [
+    "ncb-denhaag-heading-block-editor",
+    "ncb-denhaag-link-group-block-editor"
+  ],
+  "keywords": [
+    "denhaag",
+    "group",
+    "links"
+  ],
+  "textdomain": "nlds-community-blocks",
+  "version": "1.0.0"
+}

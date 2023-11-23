@@ -1,0 +1,70 @@
+{
+	"name": "nlds-community-blocks",
+	"version": "1.0.0",
+	"description": "NL Design System Community Blocks.",
+	"author": "Acato",
+	"main": "build/index.js",
+	"contributors": [
+		{
+			"name": "Paul van Impelen",
+			"email": "paul@acato.nl",
+			"url": "https://acato.nl"
+		},
+		{
+			"name": "Richard Korthuis",
+			"email": "richardkorthuis@acato.nl",
+			"url": "https://acato.nl"
+		},
+		{
+			"name": "Yolijn van der Kolk",
+			"email": "yolijn@frameless.io"
+		}
+	],
+	"scripts": {
+		"build": "wp-scripts build src/blocks/index.js && npx mix build --production",
+		"build-assets": "npx mix build --production",
+		"format:js": "wp-scripts format-js",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start src/blocks/index.js",
+		"start-assets": "npx mix watch",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^14.12.0",
+		"@wordpress/prettier-config": "^2.25.13",
+		"@wordpress/scripts": "^26.17.0",
+		"fs": "0.0.1-security",
+		"laravel-mix": "^6.0.49",
+		"path": "^0.12.7",
+		"resolve-url-loader": "^5.0.0"
+	},
+	"dependencies": {
+		"@gemeente-denhaag/accordion": "^0.2.3-alpha.357",
+		"@gemeente-denhaag/blockquote": "^0.1.1-alpha.268",
+		"@gemeente-denhaag/button": "^0.2.3-alpha.357",
+		"@gemeente-denhaag/button-group": "^0.1.1-alpha.226",
+		"@gemeente-denhaag/components-css": "0.1.1-alpha.303",
+		"@gemeente-denhaag/descriptionlist": "^0.1.1-alpha.257",
+		"@gemeente-denhaag/design-tokens-common": "0.2.3-alpha.357",
+		"@gemeente-denhaag/design-tokens-components": "0.2.3-alpha.357",
+		"@gemeente-denhaag/divider": "^0.2.3-alpha.357",
+		"@gemeente-denhaag/highlighted-links": "^0.1.1-alpha.180",
+		"@gemeente-denhaag/icons": "^0.2.3-alpha.357",
+		"@gemeente-denhaag/image": "^0.1.1-alpha.266",
+		"@gemeente-denhaag/link": "^0.2.3-alpha.357",
+		"@gemeente-denhaag/link-group": "^0.1.3-alpha.218",
+		"@gemeente-denhaag/note": "^0.1.1-alpha.270",
+		"@gemeente-denhaag/table": "^0.1.1-alpha.259",
+		"@gemeente-denhaag/typography": "^0.2.3-alpha.357",
+		"@wordpress/block-editor": "12.14.0",
+		"@wordpress/blocks": "12.23.0",
+		"@wordpress/components": "25.12.0",
+		"@wordpress/data": "9.16.0",
+		"@wordpress/element": "5.23.0",
+		"@wordpress/icons": "9.37.0",
+		"classnames": "^2.3.2",
+		"is-url": "^1.2.4"
+	},
+	"prettier": "@wordpress/prettier-config"
+}

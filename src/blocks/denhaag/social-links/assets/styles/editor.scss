@@ -1,0 +1,22 @@
+.denhaag-socials {
+  all: unset;
+}
+
+.denhaag-socials > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  column-gap: var(--denhaag-space-block-3xl);
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  row-gap: var(--denhaag-space-block-md);
+
+  @media (min-width: 991px) {
+	column-gap: var(--denhaag-space-block-md);
+  }
+}
+
+.denhaag-socials__link:has(.denhaag-socials__instruction) {
+  align-items: center;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  padding-inline-end: 0.5em;
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Notification",
+  "description": "A component to inform the visitor.",
+  "icon": "info",
+  "name": "ncb-denhaag/note",
+  "category": "nlds-community-denhaag-blocks",
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": ""
+    },
+    "variant": {
+      "type": "string",
+      "default": "info",
+      "enum": [
+        "info",
+        "warning"
+      ]
+    }
+  },
+  "example": {
+    "attributes": {
+      "text": "This is an example notification content. Which is used to inform the site user.",
+      "type": "info"
+    }
+  },
+  "supports": {
+    "align": false,
+    "className": false,
+    "customClassName": false,
+    "html": false
+  },
+  "style": [
+    "ncb-denhaag-note-block",
+    "ncb-denhaag-link"
+  ],
+  "variations": [
+    {
+      "name": "ncb-denhaag/note-warning",
+      "title": "Notification: Warning",
+      "description": "A component to warn the visitor.",
+      "icon": "warning",
+      "attributes": {
+        "variant": "warning"
+      },
+      "example": {
+        "attributes": {
+          "text": "This is an example warning content. Which is used to warn the site user.",
+          "variant": "warning"
+        }
+      }
+    }
+  ],
+  "keywords": [
+    "denhaag",
+    "info",
+    "information",
+    "notification",
+    "warning"
+  ],
+  "version": "1.2.0"
+}

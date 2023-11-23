@@ -1,0 +1,49 @@
+{
+    "title" : "Meta",
+    "description" : "Showing the post meta",
+    "name" : "ncb-denhaag/meta",
+    "category" : "nlds-community-denhaag-blocks",
+    "textdomain" : "nlds-community-blocks",
+    "attributes" : {
+        "excerpt" : {
+            "type" : "boolean",
+            "default" : true
+        },
+        "share" : {
+            "type" : "boolean",
+            "default" : true
+        },
+        "meta" : {
+            "type" : "boolean",
+            "default" : true
+        }
+    },
+    "supports" : {
+        "className" : false,
+        "customClassName" : false,
+        "html" : false,
+        "multiple" : false
+    },
+    "editorStyle" : [
+        "ncb-denhaag-meta-block-editor"
+    ],
+    "style" : [
+        "ncb-denhaag-meta-block",
+        "ncb-denhaag-button-block",
+        "ncb-denhaag-divider-block",
+        "ncb-denhaag-heading-block",
+        "ncb-denhaag-paragraph-block"
+    ],
+    "script" : [
+        "ncb-denhaag-meta-block",
+        "ncb-denhaag-button-block"
+    ],
+    "keywords" : [
+        "date",
+        "denhaag",
+        "excerpt",
+        "heading",
+        "meta",
+        "title"
+    ]
+}

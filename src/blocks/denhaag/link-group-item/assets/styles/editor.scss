@@ -1,0 +1,12 @@
+.denhaag-link-group .denhaag-link {
+	cursor: auto;
+
+	&:hover:not([href]) {
+		text-decoration: none;
+	}
+}
+
+.denhaag-link-group__list-item--no-link {
+	align-items: center;
+	display: flex;
+}

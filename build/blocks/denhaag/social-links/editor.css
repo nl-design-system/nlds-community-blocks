@@ -1,0 +1,3 @@
+.denhaag-socials{all:unset}.denhaag-socials>.block-editor-inner-blocks>.block-editor-block-list__layout{-moz-column-gap:var(--denhaag-space-block-3xl);column-gap:var(--denhaag-space-block-3xl);display:flex;flex-wrap:wrap;list-style:none;row-gap:var(--denhaag-space-block-md)}@media (min-width:991px){.denhaag-socials>.block-editor-inner-blocks>.block-editor-block-list__layout{-moz-column-gap:var(--denhaag-space-block-md);column-gap:var(--denhaag-space-block-md)}}.denhaag-socials__link:has(.denhaag-socials__instruction){align-items:center;border:2px solid #e0e0e0;display:flex;padding-inline-end:.5em}
+
+/*# sourceMappingURL=editor.css.map*/

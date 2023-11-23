@@ -1,0 +1,22 @@
+{
+  "title": "Social link",
+  "description": "Social link shown as an icon.",
+  "icon": "admin-links",
+  "name": "ncb-denhaag/social-link",
+  "category": "nlds-community-denhaag-blocks",
+  "textdomain": "nlds-community-blocks",
+  "attributes": {
+	"link": {
+	  "type": "object"
+	}
+  },
+  "parent": [
+	"ncb-denhaag/social-links"
+  ],
+  "supports": {
+	"className": false,
+	"customClassName": false,
+	"html": false
+  },
+  "version": "1.0.0"
+}

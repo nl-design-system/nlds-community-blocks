@@ -1,0 +1,9 @@
+.denhaag-column {
+	& > :first-child:not(.sr-only)  {
+		margin-block-start: 0;
+	}
+
+	& > :last-child:not(.sr-only)  {
+		margin-block-end: 0;
+	}
+}
