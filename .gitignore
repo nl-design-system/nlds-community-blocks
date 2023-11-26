@@ -22,8 +22,9 @@ build/Release
 # Optional eslint cache
 .eslintcache
 
-# Output of 'npm pack'
+# Output of 'npm pack' and `wp-scripts plugin-zip`
 *.tgz
+*.zip
 
 # dotenv environment variables file
 .env
