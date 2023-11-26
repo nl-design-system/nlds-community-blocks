@@ -1,1 +1,0 @@
-{"version":3,"file":"blocks/denhaag/column/editor.css","mappings":"AAAA,gBACC,6BACA,OACA,eACD,C","sources":["webpack://nlds-community-blocks/./src/blocks/denhaag/column/assets/styles/editor.scss"],"sourcesContent":[".denhaag-column {\n\tbox-shadow: 0 0 0 2px #e0e0e0;\n\tflex: 1;\n\tmin-height: 90px;\n}\n"],"names":[],"sourceRoot":""}

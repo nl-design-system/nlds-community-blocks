@@ -1,1 +1,0 @@
-{"version":3,"file":"blocks/denhaag/featured-image/styles.css","mappings":"AAAA,gCACE,oBACF,C","sources":["webpack://nlds-community-blocks/./src/blocks/denhaag/featured-image/assets/styles/styles.scss"],"sourcesContent":[".denhaag-columns + .denhaag-image {\n  margin-block-start: 0;\n}\n"],"names":[],"sourceRoot":""}
