@@ -1,0 +1,23 @@
+version: 2
+updates:
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    schedule:
+      interval: "monthly"
+      day: "monday"
+      time: "07:00"
+
+  # Maintain dependencies for npm (Node.js)
+  - package-ecosystem: "npm"
+    schedule:
+      interval: "monthly"
+      day: "monday"
+      time: "07:00"
+
+  # Maintain dependencies for Composer (PHP)
+  - package-ecosystem: "composer"
+    schedule:
+      interval: "monthly"
+      day: "monday"
+      time: "07:00"
