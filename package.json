@@ -1,10 +1,15 @@
 {
-	"name": "nlds-community-blocks",
+	"name": "@nl-design-system-community/nlds-community-blocks",
 	"version": "1.0.0",
-	"description": "NL Design System Community Blocks.",
+	"description": "WordPress Gutenberg Blocks for NL Design System components. Use this so authors of WordPress websites can use NL Design System components to compose their pages.",
 	"license": "EUPL-1.2",
 	"author": "Acato",
 	"main": "build/index.js",
+	"keywords": [
+		"nl-design-system",
+		"wordpress",
+		"wordpress-plugin"
+	],
 	"contributors": [
 		{
 			"name": "Paul van Impelen",
