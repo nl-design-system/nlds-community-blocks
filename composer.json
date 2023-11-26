@@ -1,6 +1,7 @@
 {
   "name": "nl-design-system/nlds-community-blocks",
   "type": "wordpress-plugin",
+  "license": "EUPL-1.2",
   "description": "Adds NL Design System Community Blocks to the Gutenberg editor.",
   "authors": [
     {

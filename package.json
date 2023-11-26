@@ -2,6 +2,7 @@
 	"name": "nlds-community-blocks",
 	"version": "1.0.0",
 	"description": "NL Design System Community Blocks.",
+	"license": "EUPL-1.2",
 	"author": "Acato",
 	"main": "build/index.js",
 	"contributors": [
