@@ -1,4 +1,0 @@
-.denhaag-button-group{display:flex;flex-direction:var(--denhaag-button-group-flex-direction,column);gap:var(--denhaag-button-group-gap);padding-block-end:var(--denhaag-button-group-padding,var(--denhaag-button-group-gap));padding-block-start:var(--denhaag-button-group-padding,var(--denhaag-button-group-gap))}@media (width <= 767px){.denhaag-button-group{width:100%}}@media (width >= 768px){.denhaag-button-group{--denhaag-button-group-flex-direction:row}}
-
-
-/*# sourceMappingURL=style.css.map*/
