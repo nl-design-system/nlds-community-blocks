@@ -20,6 +20,9 @@
 			"email": "yolijn@frameless.io"
 		}
 	],
+	"engines": {
+		"node": "^20"
+	},
 	"scripts": {
 		"build": "wp-scripts build src/blocks/index.js && npx mix build --production",
 		"build-assets": "npx mix build --production",
