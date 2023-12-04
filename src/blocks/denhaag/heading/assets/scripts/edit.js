@@ -27,10 +27,6 @@ export default function Edit(
 
 	const _PLACEHOLDER = _x( 'Enter your heading…', 'ncb-denhaag/heading: Placeholder', 'nlds-community-blocks' );
 
-
-	console.log( attributes );
-
-
 	useLayoutEffect( () => {
 		// Set back to default value.
 		if ( !! attributes.srOnly && 2 !== attributes.appearance ) {
