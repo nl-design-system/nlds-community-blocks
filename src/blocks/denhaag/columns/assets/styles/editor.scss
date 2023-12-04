@@ -1,5 +1,6 @@
 .editor-denhaag-columns {
 	--ncb-columns: 1;
+
 	box-shadow: 0 0 0 2px #e0e0e0;
 	padding-inline: var(--ncb-grid-gap, 1rem);
 	padding-block: var(--ncb-grid-gap, 1rem);
@@ -8,7 +9,7 @@
 		--ncb-grid-gap: 2.5rem;
 	}
 
-	@media (min-width: 768px) {
+	@media (width >= 768px) {
 		&,
 		&--single {
 			--ncb-columns: 1;
@@ -36,7 +37,6 @@
 
 		&--one-third-one-third-one-third {
 			--ncb-grid-columns: 1fr 1fr 1fr;
-
 			--denhaag-image-download-text-display-desktop: none;
 		}
 	}
