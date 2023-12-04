@@ -1,25 +1,26 @@
 .denhaag-accordion {
 	border: 1px solid var(--denhaag-color-grey-3);
-	padding: 1rem;
+	padding-block: 1rem;
+	padding-inline: 1rem;
 
 	.wp-block[data-type="ncb-denhaag/accordion-item"] {
 		margin-block-start: 0;
 		margin-block-end: 0;
 
 		.denhaag-accordion__container {
-			border-top: 0;
+			border-block-start: 0;
 			border-radius: 0;
 		}
 
 		&:first-of-type .denhaag-accordion__container {
-			border-top: var(--denhaag-accordion-container-border);
-			border-top-right-radius: 3px;
-			border-top-left-radius: 3px;
+			border-block-start: var(--denhaag-accordion-container-border);
+			border-start-end-radius: 3px;
+			border-start-start-radius: 3px;
 		}
 
 		&:last-child .denhaag-accordion__container {
-			border-bottom-right-radius: 3px;
-			border-bottom-left-radius: 3px;
+			border-end-end-radius: 3px;
+			border-end-start-radius: 3px;
 		}
 	}
 }

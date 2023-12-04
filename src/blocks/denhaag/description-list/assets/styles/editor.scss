@@ -41,7 +41,8 @@
 	}
 
 	.block-list-appender {
-		padding: 1em;
+		padding-inline: 1em;
+		padding-block: 1em;
 		position: static;
 
 		button {
@@ -51,7 +52,7 @@
 
 	@media (min-width: 640px) {
 		&__title {
-			border-bottom: 1px solid
+			border-block-end: 1px solid
 				var(--denhaag-description-list-border-color);
 		}
 	}

@@ -38,7 +38,7 @@
 	flex-direction: column;
 	gap: var(--denhaag-space-block-sm);
 	padding-block-end: var(--denhaag-space-block-2xl);
-	width: 100%;
+	inline-size: 100%;
 }
 
 .denhaag-meta + .utrecht-paragraph {
@@ -105,7 +105,7 @@
 	.denhaag-button {
 		aspect-ratio: 1;
 		box-sizing: border-box;
-		height: auto;
+		block-size: auto;
 	}
 
 	.denhaag-button--icon-only .denhaag-button__icon {

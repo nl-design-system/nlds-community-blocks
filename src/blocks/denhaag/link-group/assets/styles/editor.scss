@@ -31,7 +31,8 @@
 	}
 
 	.block-editor-block-list__block {
-		margin: 0 !important;
+		margin-inline: 0 !important;
+		margin-block: 0 !important;
 	}
 
 	.block-list-appender {
