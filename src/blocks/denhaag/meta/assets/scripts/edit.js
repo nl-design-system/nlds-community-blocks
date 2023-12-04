@@ -14,7 +14,7 @@ const Edit = ({ attributes, setAttributes }) => {
 		wp.data.select('core/editor').getEditedPostAttribute('excerpt')
 	);
 
-	const { supported } = window.ncb_editor_variables?.denhaag['meta'];
+	const { supported } = window.ncb_editor_variables?.denhaag.meta;
 
 	/*
 	 * Update data on key change of specific postAttribute.

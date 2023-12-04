@@ -29,7 +29,7 @@ export default function Edit({
 	const _CLASSES = useMemo(() => {
 		return {
 			root: classNames('denhaag-accordion__container', {
-				['denhaag-accordion__container--open']:
+				'denhaag-accordion__container--open':
 					!!isSelected || !!isParentOfSelectedBlock,
 			}),
 			panel: 'denhaag-accordion__panel',

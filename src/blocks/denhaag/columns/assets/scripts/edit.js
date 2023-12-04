@@ -15,7 +15,7 @@ export default function edit({ attributes, setAttributes, clientId }) {
 					!!attributes.columns && !!attributes.layout,
 				[`editor-denhaag-columns--${attributes.layout}`]:
 					!!attributes.layout,
-				['has-no-layout']: !attributes.layout,
+				'has-no-layout': !attributes.layout,
 			}),
 			layoutSelection: 'editor-denhaag-columns__layout-selection',
 		};

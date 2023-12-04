@@ -34,16 +34,16 @@ export default function Edit({ attributes, setAttributes }) {
 			root: classNames('denhaag-button', {
 				[`denhaag-button--${attributes.variant}-action`]:
 					!!attributes.variant,
-				['denhaag-button--end-icon']:
+				'denhaag-button--end-icon':
 					(!!attributes.icon && !attributes.iconBefore) ||
 					!!isExternal,
-				['denhaag-button--start-icon']:
+				'denhaag-button--start-icon':
 					!!attributes.icon && !!attributes.iconBefore && !isExternal,
 				[`denhaag-button--${attributes.size}`]:
 					'default' !== attributes.size,
-				['denhaag-button--external']: !!isExternal,
-				['denhaag-button--disabled']: !attributes.link?.url,
-				['denhaag-button--icon-only']:
+				'denhaag-button--external': !!isExternal,
+				'denhaag-button--disabled': !attributes.link?.url,
+				'denhaag-button--icon-only':
 					!!attributes.icon &&
 					!(attributes.link && attributes.link.title),
 			}),
