@@ -72,7 +72,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: nlds-community-blocks
-          path: nlds-community-blocks.zip
+          path: "@nl-design-system-community/nlds-community-blocks.zip"
           retention-days: 14
 
   test:
@@ -95,3 +95,23 @@ jobs:
       - name: "Continuous Integration: test"
         run: |
           npm run --if-present test
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: [build, lint, test]
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: "Restore build artifact: build"
+        uses: actions/download-artifact@v3
+        with:
+          name: nlds-community-blocks
+          path: "@nl-design-system-community/nlds-community-blocks.zip"
+
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: "@nl-design-system-community/nlds-community-blocks.zip"
