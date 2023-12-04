@@ -1,42 +1,40 @@
 {
-  "name": "nl-design-system/nlds-community-blocks",
-  "type": "wordpress-plugin",
-  "license": "EUPL-1.2",
-  "description": "Adds NL Design System Community Blocks to the Gutenberg editor.",
-  "authors": [
-    {
-      "name": "Richard Korthuis",
-      "email": "richardkorthuis@acato.nl",
-      "homepage": "https://acato.nl",
-      "role": "Backend WordPress Developer"
-    },
-    {
-      "name": "Paul van Impelen",
-      "email": "paul@acato.nl",
-      "homepage": "https://acato.nl",
-      "role": "Frontend WordPress Developer"
-    },
-    {
-      "name": "Robbert Broersma",
-      "email": "robbert@frameless.io",
-      "homepage": "https://frameless.io"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "git@bitbucket.org:acato/wp-pre-commit-hook.git"
-    }
-  ],
-  "require-dev": {
-    "acato/wp-pre-commit-hook": "*",
-    "composer/installers": "~1.0"
-  },
-  "config": {
-    "allow-plugins": {
-      "composer/installers": true,
-      "dealerdirect/phpcodesniffer-composer-installer": true,
-      "acato/wp-pre-commit-hook": true
-    }
-  }
+	"name": "nl-design-system/nlds-community-blocks",
+	"type": "wordpress-plugin",
+	"license": "EUPL-1.2",
+	"description": "Adds NL Design System Community Blocks to the Gutenberg editor.",
+	"authors": [
+		{
+			"name": "Richard Korthuis",
+			"email": "richardkorthuis@acato.nl",
+			"homepage": "https://acato.nl",
+			"role": "Backend WordPress Developer"
+		},
+		{
+			"name": "Paul van Impelen",
+			"email": "paul@acato.nl",
+			"homepage": "https://acato.nl",
+			"role": "Frontend WordPress Developer"
+		},
+		{
+			"name": "Robbert Broersma",
+			"email": "robbert@frameless.io",
+			"homepage": "https://frameless.io"
+		}
+	],
+	"repositories": [
+		{
+			"type": "git",
+			"url": "git@bitbucket.org:acato/wp-pre-commit-hook.git"
+		}
+	],
+	"require-dev": {
+		"composer/installers": "~1.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
 }
