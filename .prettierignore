@@ -1,0 +1,18 @@
+# Ignore 3rd party files
+node_modules
+vendor
+
+# Ignore minified files
+*.min.js
+
+# Ignore generated files
+dist
+build
+tmp
+CHANGELOG.md
+package-lock.json
+pnpm-lock.yaml
+composer.lock
+
+# Ignore generated files from WordPress
+languages/*.json
