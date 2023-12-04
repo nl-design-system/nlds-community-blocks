@@ -37,7 +37,7 @@ export default function Edit({ attributes, setAttributes }) {
 	const _CLASSES = useMemo(() => {
 		return {
 			root: classNames('denhaag-link-group__list-item', {
-				['denhaag-link-group__list-item--no-link']:
+				'denhaag-link-group__list-item--no-link':
 					!attributes.hasOwnProperty('link') || !attributes.link,
 			}),
 			instruction: 'denhaag-link-group__list-item-instruction',

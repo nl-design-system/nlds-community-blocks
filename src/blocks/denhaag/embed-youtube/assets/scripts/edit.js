@@ -54,8 +54,8 @@ export default function Edit({ attributes, setAttributes }) {
 	const _CLASSES = useMemo(() => {
 		return {
 			root: classNames('denhaag-embed-youtube', {
-				['denhaag-embed-youtube--no-video']: !attributes.id,
-				['denhaag-embed-youtube--portrait']: !!attributes.portrait,
+				'denhaag-embed-youtube--no-video': !attributes.id,
+				'denhaag-embed-youtube--portrait': !!attributes.portrait,
 			}),
 			input: 'denhaag-embed-youtube__input',
 			details: 'denhaag-embed-youtube__details',

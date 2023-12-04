@@ -11,7 +11,7 @@ export default function edit({ attributes, setAttributes }) {
 	const _CLASSES = useMemo(() => {
 		return {
 			root: classNames('denhaag-link-group', {
-				['denhaag-link-group--dark']: !is_editor,
+				'denhaag-link-group--dark': !is_editor,
 			}),
 			caption: classNames('denhaag-link-group__caption', {
 				[`utrecht-heading-${attributes.appearance}`]:

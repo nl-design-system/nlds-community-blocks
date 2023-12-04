@@ -65,9 +65,9 @@ export default function Edit({ attributes, setAttributes, clientId }) {
 	const _CLASSES = useMemo(() => {
 		return {
 			root: classNames('denhaag-image', {
-				['denhaag-image--has-image']: attributes.image,
-				['denhaag-image--no-image']: !attributes.image,
-				['denhaag-image--loading']: !!isLoading,
+				'denhaag-image--has-image': attributes.image,
+				'denhaag-image--no-image': !attributes.image,
+				'denhaag-image--loading': !!isLoading,
 			}),
 			image: classNames('denhaag-image__image', {
 				[`denhaag-image--${attributes.size}`]: !!attributes.size,

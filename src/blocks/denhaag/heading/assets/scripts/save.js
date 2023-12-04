@@ -10,7 +10,7 @@ export default function Save({ attributes }) {
 	 */
 	const _CLASSES = classNames({
 		[`utrecht-heading-${attributes.appearance}`]: !!attributes.appearance,
-		['sr-only']: !!attributes.srOnly,
+		'sr-only': !!attributes.srOnly,
 	});
 
 	return (

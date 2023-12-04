@@ -16,7 +16,7 @@ export default function Edit({ attributes, setAttributes, mergeBlocks }) {
 		return classNames({
 			[`utrecht-heading-${attributes.appearance}`]:
 				!!attributes.appearance,
-			['sr-only']: !!attributes.srOnly,
+			'sr-only': !!attributes.srOnly,
 		});
 	}, [attributes.appearance, !!attributes.srOnly]);
 

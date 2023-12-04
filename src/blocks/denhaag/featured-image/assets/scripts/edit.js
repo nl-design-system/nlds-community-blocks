@@ -42,9 +42,9 @@ export default function edit({ attributes, setAttributes, clientId }) {
 	const _CLASSES = useMemo(() => {
 		return {
 			root: classNames('denhaag-featured-image', {
-				['denhaag-featured-image--loading']:
+				'denhaag-featured-image--loading':
 					'object' !== typeof media && !!isSupported,
-				['denhaag-featured-image--not-supported']: !isSupported,
+				'denhaag-featured-image--not-supported': !isSupported,
 			}),
 			figure: 'denhaag-image',
 			image: `denhaag-featured-image__image`,

@@ -12,8 +12,8 @@ export default function edit({ clientId, attributes, setAttributes }) {
 	const _CLASSES = useMemo(() => {
 		return {
 			root: classNames('denhaag-button-group', {
-				['denhaag-button-group--single']: 1 === attributes.amount,
-				['denhaag-button-group--multiple']: 2 >= attributes.amount,
+				'denhaag-button-group--single': 1 === attributes.amount,
+				'denhaag-button-group--multiple': 2 >= attributes.amount,
 			}),
 		};
 	}, [attributes.amount]);
