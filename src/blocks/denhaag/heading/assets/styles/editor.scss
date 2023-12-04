@@ -1,4 +1,5 @@
 .denhaag-theme [class*=" utrecht-heading-"] {
+
 	&::selection {
 		background: hsl(117 28% 87%); // HSL instead variable, CSS Variables won't load at this point.
 	}
