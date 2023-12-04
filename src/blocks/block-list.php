@@ -20,6 +20,7 @@ return [
 	'ncb-denhaag/button-group',
 	'ncb-denhaag/column',
 	'ncb-denhaag/columns',
+	'ncb-denhaag/cta-download',
 	'ncb-denhaag/description-list',
 	'ncb-denhaag/description-list-item',
 	'ncb-denhaag/divider',

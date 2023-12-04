@@ -1,0 +1,33 @@
+{
+  "title": "CTA Download",
+  "description": "all To Action download.",
+  "icon": "download",
+  "name": "ncb-denhaag/cta-download",
+  "category": "nlds-community-denhaag-blocks",
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": null,
+      "source": "text",
+      "selector": "h1, h2, h3, h4, h5, h6"
+    },
+    "file": {
+      "type": "number",
+      "default": null
+    }
+  },
+  "supports": {
+    "alignWide": false,
+    "className": false,
+    "customClassName": false,
+    "reusable": true,
+    "html": false,
+    "transforms": false
+  },
+  "style": [
+    "ncb-denhaag-cta-link-block",
+    "ncb-denhaag-cta-download-block"
+  ],
+  "textdomain": "nlds-community-blocks",
+  "version": "1.0.0"
+}
