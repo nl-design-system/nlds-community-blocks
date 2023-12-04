@@ -20,17 +20,17 @@ export default function Edit(
 	 */
 	const _CLASSES = useMemo( () => {
 		return classNames( {
-			[ `utrecht-heading-${ attributes.tagShownAs }` ]: !! attributes.tagShownAs,
+			[ `utrecht-heading-${ attributes.appearance }` ]: !! attributes.appearance,
 			[ 'sr-only' ]: !! attributes.srOnly
 		} )
-	}, [ attributes.tagShownAs, !! attributes.srOnly ] );
+	}, [ attributes.appearance, !! attributes.srOnly ] );
 
 	const _PLACEHOLDER = _x( 'Enter your heading…', 'ncb-denhaag/heading: Placeholder', 'nlds-community-blocks' );
 
 	useLayoutEffect( () => {
 		// Set back to default value.
-		if ( !! attributes.srOnly && 2 !== attributes.tagShownAs ) {
-			setAttributes( { tagShownAs: 2 } );
+		if ( !! attributes.srOnly && 2 !== attributes.appearance ) {
+			setAttributes( { appearance: 2 } );
 		}
 
 		// Remove `<meta charset="utf-8">` from copy-and-paste actions.
@@ -44,15 +44,15 @@ export default function Edit(
 		<>
 			<BlockControls>
 				<NCB_HeadingTagControl
-					value={ attributes.tag }
-					allowedTags={ attributes.allowedTags }
+					value={ attributes.level }
+					allowedLevels={ attributes.allowedLevels }
 					setAttributes={ setAttributes }
 				/>
 				{ ! attributes.srOnly && (
 					<NCB_HeadingTagControl
-						attribute="tagShownAs"
-						value={ attributes.tagShownAs }
-						allowedTags={ attributes.allowedTags }
+						attribute="appearance"
+						value={ attributes.appearance }
+						allowedLevels={ attributes.allowedLevels }
 						setAttributes={ setAttributes }
 					/>
 				) }
@@ -61,7 +61,7 @@ export default function Edit(
 
 			<RichText
 				identifier="content"
-				tagName={ `h${ attributes.tag }` }
+				tagName={ `h${ attributes.level }` }
 				value={ attributes.content }
 				onChange={ ( text ) => setAttributes( { content: text.replace( /<[^>]*>?/gm, '' ) } ) }
 				onRemove={ () => onReplace( [] ) }

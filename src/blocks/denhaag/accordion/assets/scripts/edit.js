@@ -22,15 +22,15 @@ export default function edit({attributes, setAttributes, clientId}) {
     <>
       <BlockControls>
         <NCB_HeadingTagControl
-          value={attributes.tag}
-          allowedTags={attributes.allowedTags}
+          value={attributes.level}
+          allowedTags={attributes.allowedLevels}
           setAttributes={setAttributes}
         />
       </BlockControls>
       <div className="denhaag-accordion">
         <InnerBlocks
           allowedBlocks={['ncb-denhaag/accordion-item']}
-          template={[['ncb-denhaag/accordion-item', {heading: attributes.tag}]]}
+          template={[['ncb-denhaag/accordion-item', {heading: attributes.level}]]}
           templateLock={false}
           renderAppender={() => <InnerBlocks.ButtonBlockAppender />}
         />

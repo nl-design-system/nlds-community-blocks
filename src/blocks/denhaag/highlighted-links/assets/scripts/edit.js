@@ -13,33 +13,33 @@ export default function edit({attributes, setAttributes}) {
     return {
       root: classNames( 'denhaag-link-group', 'denhaag-highlighted-links' ),
       caption: classNames( 'denhaag-link-group__caption', {
-        [`utrecht-heading-${attributes.tagShownAs}`]: !!attributes.tagShownAs,
+        [`utrecht-heading-${attributes.appearance}`]: !!attributes.appearance,
       } ),
       list: classNames( 'utrecht-link-list', 'utrecht-link-list--html-ul', 'denhaag-link-group__list', 'denhaag-highlighted-links__list' )
     };
   }, [
-    attributes.tagShownAs,
+    attributes.appearance,
   ] );
 
   return (
     <>
       <BlockControls>
         <NCB_HeadingTagControl
-          value={attributes.tag}
-          allowedTags={attributes.allowedTags}
+          value={attributes.level}
+          allowedTags={attributes.allowedLevels}
           setAttributes={setAttributes}
         />
         <NCB_HeadingTagControl
-          value={attributes.tagShownAs}
-          attribute="tagShownAs"
-          allowedTags={attributes.allowedTags}
+          value={attributes.appearance}
+          attribute="appearance"
+          allowedTags={attributes.allowedLevels}
           setAttributes={setAttributes}
         />
       </BlockControls>
 
       <div className={_CLASSES.root}>
         <RichText
-          tagName={`h${attributes.tag}`}
+          tagName={`h${attributes.level}`}
           className={_CLASSES.caption}
           value={attributes.caption}
           placeholder={_x(

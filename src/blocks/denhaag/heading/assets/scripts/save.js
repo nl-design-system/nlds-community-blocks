@@ -9,10 +9,9 @@ export default function Save( { attributes } ) {
 	 * @private
 	 */
 	const _CLASSES = classNames( {
-		[ `utrecht-heading-${ attributes.tagShownAs }` ]: !! attributes.tagShownAs,
+		[ `utrecht-heading-${ attributes.appearance }` ]: !! attributes.appearance,
 		[ 'sr-only' ]: !! attributes.srOnly
 	} );
 
-	return <RichText.Content value={ attributes.content } tagName={ `h${ attributes.tag }` } className={ _CLASSES } />;
+	return <RichText.Content value={ attributes.content } tagName={ `h${ attributes.level }` } className={ _CLASSES } />;
 }
-

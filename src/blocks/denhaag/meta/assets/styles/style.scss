@@ -1,3 +1,4 @@
+/* stylelint-disable max-line-length */
 // @todo: Add .denhaag-meta to NLDS Github;
 // @todo: Remove denhaag-page-buttons from NLDS Github -> Merged into denhaag-meta;
 // @todo: Remove denhaag-event-date from NLDS Github -> Merged into denhaag-meta;
@@ -37,12 +38,12 @@
   width: 100%;
 }
 
-.denhaag-theme .utrecht-heading-1 + .utrecht-paragraph {
-  margin-block-start: var(--denhaag-space-block-2xl);
-}
-
 .denhaag-meta + .utrecht-paragraph {
   margin-block-start: 0;
+}
+
+.denhaag-theme .utrecht-heading-1 + .utrecht-paragraph {
+  margin-block-start: var(--denhaag-space-block-2xl);
 }
 
 .denhaag-meta__buttons {
@@ -56,7 +57,7 @@
   color: var(--denhaag-meta-meta-color);
   display: flex;
   flex-direction: row;
-  font: var(--denhaag-meta-meta-font-weight) var(--denhaag-meta-meta-font-size)/var(--denhaag-meta-meta-line-height) var(--denhaag-meta-meta-font-family);
+  font: var(--denhaag-meta-meta-font-weight) var(--denhaag-meta-meta-font-size) / var(--denhaag-meta-meta-line-height) var(--denhaag-meta-meta-font-family);
   letter-spacing: var(--denhaag-meta-meta-letter-spacing);
   order: -1;
   text-transform: var(--denhaag-meta-meta-text-transform);
@@ -80,6 +81,7 @@
 }
 
 @container (min-width: 480px) {
+
   .denhaag-meta__share {
 	align-items: center;
 	flex-direction: row;

@@ -5,7 +5,7 @@
     "name" : "ncb-denhaag/link-group",
     "category" : "nlds-community-denhaag-blocks",
     "attributes" : {
-        "tag" : {
+        "level" : {
             "type" : "number",
             "default" : 4,
             "enum" : [
@@ -22,7 +22,7 @@
             "type" : "number",
             "default" : 0
         },
-        "allowedTags" : {
+        "allowedLevels" : {
             "type" : "array",
             "default" : [
                 2,
@@ -35,7 +35,7 @@
                 4
             ]
         },
-        "tagShownAs" : {
+        "appearance" : {
             "type" : "number",
             "default" : 4,
             "enum" : [

@@ -1,83 +1,83 @@
 .editor-denhaag-columns {
-  --grid-gap: 1rem;
   --columns: 1;
   box-shadow: 0 0 0 2px #e0e0e0;
-  padding: var(--grid-gap, 0px);
+  padding: var(--grid-gap, 1rem);
 
   &.has-no-layout {
-	--grid-gap: 2.5rem;
+    --grid-gap: 2.5rem;
   }
 
   @media (min-width: 768px) {
-	&,
-	&--single {
-		--columns: 1;
-	}
 
-	&--fifty-fifty {
-	  --columns: 2;
-	}
+    &,
+    &--single {
+      --columns: 1;
+    }
 
-	&--one-third-two-third {
-	  --grid-columns: 1fr 2fr;
+    &--fifty-fifty {
+      --columns: 2;
+    }
 
-	  .wp-block-denhaag-column:first-child {
-		--denhaag-image-download-text-display-desktop: none;
-	  }
-	}
+    &--one-third-two-third {
+      --grid-columns: 1fr 2fr;
 
-	&--two-third-one-third {
-	  --grid-columns: 2fr 1fr;
+      .wp-block-denhaag-column:first-child {
+        --denhaag-image-download-text-display-desktop: none;
+      }
+    }
 
-	  .wp-block-denhaag-column:last-child {
-		--denhaag-image-download-text-display-desktop: none;
-	  }
-	}
+    &--two-third-one-third {
+      --grid-columns: 2fr 1fr;
 
-	&--one-third-one-third-one-third {
-	  --grid-columns: 1fr 1fr 1fr;
+      .wp-block-denhaag-column:last-child {
+        --denhaag-image-download-text-display-desktop: none;
+      }
+    }
 
-	  --denhaag-image-download-text-display-desktop: none;
-	}
+    &--one-third-one-third-one-third {
+      --grid-columns: 1fr 1fr 1fr;
+
+      --denhaag-image-download-text-display-desktop: none;
+    }
   }
 
   &__layout-selection {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
-	h2 {
-	  margin-block-start: 0;
-	}
+    h2 {
+      margin-block-start: 0;
+    }
 
-	svg {
-	  height: 32px;
-	  width: 32px;
-	}
+    svg {
+      height: 32px;
+      width: 32px;
+    }
 
-	.components-button.has-icon {
-	  height: auto;
-	}
+    .components-button.has-icon {
+      height: auto;
+    }
   }
 
   > .block-editor-inner-blocks > .block-editor-block-list__layout {
-	display: grid;
-	grid-template-columns: var(--grid-columns, repeat(var(--columns, 1), 1fr));
-	gap: var(--grid-gap, 0px);
+    display: grid;
+    grid-template-columns: var(--grid-columns, repeat(var(--columns, 1), 1fr));
+    gap: var(--grid-gap, 1rem);
   }
 
   [data-type="ncb-denhaag/column"] {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	margin: 0;
-	width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    width: 100%;
 
-	.wp-block {
-	  margin-bottom: calc(var(--grid-gap, 0px) / 2);
-	  margin-top: calc(var(--grid-gap, 0px) / 2);
-	  margin-left: calc(var(--grid-gap, 0px) / 2);
-	  margin-right: calc(var(--grid-gap, 0px) / 2);
-	}
+    .wp-block {
+      margin-bottom: calc(var(--grid-gap, 1rem) / 2);
+      margin-top: calc(var(--grid-gap, 1rem) / 2);
+      margin-left: calc(var(--grid-gap, 1rem) / 2);
+      margin-right: calc(var(--grid-gap, 1rem) / 2);
+    }
   }
 }

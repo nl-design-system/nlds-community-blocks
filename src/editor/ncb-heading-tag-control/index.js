@@ -10,7 +10,7 @@ import { ReactComponent as H5 } from './assets/icons/h5.svg';
 const NCB_HeadingTagControl = (
   {
     value = 2,
-    attribute = "tag",
+    attribute = "level",
     allowedTags = [ 2, 3, 4 ],
     setAttributes
   }
