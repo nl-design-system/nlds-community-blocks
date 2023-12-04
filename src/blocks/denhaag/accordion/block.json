@@ -5,11 +5,11 @@
     "category" : "nlds-community-denhaag-blocks",
     "icon" : "menu",
     "attributes" : {
-        "tag" : {
+        "level" : {
             "type" : "number",
             "default" : 3
         },
-        "allowedTags" : {
+        "allowedLevels" : {
             "type" : "array",
             "default" : [
                 3,

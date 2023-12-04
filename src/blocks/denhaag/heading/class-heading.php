@@ -15,7 +15,7 @@ namespace Nlds_Community_Blocks\Src\Blocks\Denhaag;
 use Nlds_Community_Blocks\Includes\Base_Block;
 
 /**
- * The Paragraph class.
+ * The Heading class.
  *
  * This is used to register and render the block.
  *

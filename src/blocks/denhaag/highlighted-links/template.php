@@ -22,13 +22,13 @@ if ( empty( $content ) ) {
 <div class="denhaag-link-group denhaag-highlighted-links">
 	<?php
 	if ( ! empty( $attributes['caption'] ) ) :
-		$ncb_tag_show_as = ! empty( $attributes['tagShownAs'] ) ? $attributes['tagShownAs'] : 4;
+		$ncb_appearance = ! empty( $attributes['appearance'] ) ? $attributes['appearance'] : 4;
 
 		printf(
 			'  <h%1$d class="%3$s">%2$s</h%1$d>',
-			esc_attr( ! empty( $attributes['tag'] ) ? $attributes['tag'] : 4 ),
+			esc_attr( ! empty( $attributes['level'] ) ? $attributes['level'] : 4 ),
 			wp_kses_post( $attributes['caption'] ),
-			esc_attr( "utrecht-heading-$ncb_tag_show_as denhaag-link-group__caption" )
+			esc_attr( "utrecht-heading-$ncb_appearance denhaag-link-group__caption" )
 		);
 	endif;
 

@@ -18,12 +18,12 @@ export default function edit({attributes, setAttributes}) {
         ['denhaag-link-group--dark']: !is_editor
       } ),
       caption: classNames( 'denhaag-link-group__caption', {
-        [`utrecht-heading-${attributes.tagShownAs}`]: !!attributes.tagShownAs,
+        [`utrecht-heading-${attributes.appearance}`]: !!attributes.appearance,
       } ),
       image: 'denhaag-link-group__image',
     };
   }, [
-    attributes.tagShownAs,
+    attributes.appearance,
     is_editor
   ] );
 
@@ -42,14 +42,14 @@ export default function edit({attributes, setAttributes}) {
     <>
       <BlockControls>
         <NCB_HeadingTagControl
-          value={attributes.tag}
-          allowedTags={attributes.allowedTags}
+          value={attributes.level}
+          allowedTags={attributes.allowedLevels}
           setAttributes={setAttributes}
         />
         <NCB_HeadingTagControl
-          value={attributes.tagShownAs}
-          attribute="tagShownAs"
-          allowedTags={attributes.allowedTags}
+          value={attributes.appearance}
+          attribute="appearance"
+          allowedTags={attributes.allowedLevels}
           setAttributes={setAttributes}
         />
         {!!is_editor && (
@@ -69,7 +69,7 @@ export default function edit({attributes, setAttributes}) {
           />
         )}
         <RichText
-          tagName={`h${attributes.tag}`}
+          tagName={`h${attributes.level}`}
           className={_CLASSES.caption}
           value={attributes.caption}
           placeholder={_x(
