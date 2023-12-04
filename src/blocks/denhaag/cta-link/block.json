@@ -1,0 +1,50 @@
+{
+  "title": "CTA Link",
+  "description": "A CTA link is a standalone link that links to another page within the website or an external website related to the current page or to a video.",
+  "icon": "button",
+  "name": "ncb-denhaag/cta-link",
+  "category": "nlds-community-denhaag-blocks",
+  "attributes": {
+    "type": {
+      "type": "string",
+      "default": "link"
+    },
+    "link": {
+      "type": "object"
+    },
+    "firstLabel": {
+      "type": "string",
+      "source": "text",
+      "selector": ".denhaag-cta-link__excerpt span:fist-child"
+    },
+    "secondLabel": {
+      "type": "string",
+      "source": "text",
+      "selector": ".denhaag-cta-link__excerpt span:last-child"
+    }
+  },
+  "variations": [
+    {
+      "name": "ncb-denhaag/cta-link-video",
+      "title": "CTA Video",
+      "description": "A component to warn the visitor.",
+      "icon": "video-alt3",
+      "attributes": {
+        "type": "video"
+      }
+    }
+  ],
+  "supports": {
+    "alignWide": false,
+    "className": false,
+    "customClassName": false,
+    "reusable": true,
+    "html": false,
+    "transforms": false
+  },
+  "style": [
+    "ncb-denhaag-cta-link-block"
+  ],
+  "textdomain": "nlds-community-blocks",
+  "version": "1.0.0"
+}

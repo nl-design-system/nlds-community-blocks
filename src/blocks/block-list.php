@@ -21,6 +21,7 @@ return [
 	'ncb-denhaag/column',
 	'ncb-denhaag/columns',
 	'ncb-denhaag/cta-download',
+	'ncb-denhaag/cta-link',
 	'ncb-denhaag/description-list',
 	'ncb-denhaag/description-list-item',
 	'ncb-denhaag/divider',

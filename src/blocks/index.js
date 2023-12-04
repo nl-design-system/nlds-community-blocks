@@ -10,6 +10,7 @@ import './denhaag/button-group';
 import './denhaag/column';
 import './denhaag/columns';
 import './denhaag/cta-download';
+import './denhaag/cta-link';
 import './denhaag/description-list';
 import './denhaag/description-list-item';
 import './denhaag/divider';
