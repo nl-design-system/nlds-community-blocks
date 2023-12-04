@@ -1,5 +1,5 @@
 .variation-select {
-	min-width: 120px;
+	min-inline-size: 120px;
 }
 
 .utrecht-paragraph::selection {
@@ -40,9 +40,9 @@
 		);
 		content: "";
 		display: inline-block;
-		margin-left: var(--denhaag-link-icon-margin-start, 8px);
+		margin-inline-start: var(--denhaag-link-icon-margin-start, 8px);
 		vertical-align: middle;
-		height: var(--denhaag-link-icon-size, 15px);
-		width: var(--denhaag-link-icon-size, 15px);
+		block-size: var(--denhaag-link-icon-size, 15px);
+		inline-size: var(--denhaag-link-icon-size, 15px);
 	}
 }
