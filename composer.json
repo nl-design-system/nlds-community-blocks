@@ -9,22 +9,27 @@
       "homepage": "https://acato.nl",
       "role": "Backend WordPress Developer"
     },
-	{
-	  "name": "Paul van Impelen",
-	  "email": "paul@acato.nl",
-	  "homepage": "https://acato.nl",
-	  "role": "Frontend WordPress Developer"
-	}
+    {
+      "name": "Paul van Impelen",
+      "email": "paul@acato.nl",
+      "homepage": "https://acato.nl",
+      "role": "Frontend WordPress Developer"
+    },
+    {
+      "name": "Robbert Broersma",
+      "email": "robbert@frameless.io",
+      "homepage": "https://frameless.io"
+    }
   ],
   "repositories": [
-	{
-	  "type": "git",
-	  "url": "git@bitbucket.org:acato/wp-pre-commit-hook.git"
-	}
+    {
+      "type": "git",
+      "url": "git@bitbucket.org:acato/wp-pre-commit-hook.git"
+    }
   ],
   "require-dev": {
-	"acato/wp-pre-commit-hook": "*",
-	"composer/installers": "~1.0"
+    "acato/wp-pre-commit-hook": "*",
+    "composer/installers": "~1.0"
   },
   "config": {
     "allow-plugins": {
