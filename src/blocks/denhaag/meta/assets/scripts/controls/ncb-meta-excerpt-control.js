@@ -1,6 +1,6 @@
-import { _x, sprintf } from "@wordpress/i18n";
-import { ToolbarButton } from "@wordpress/components";
-import { useMemo } from "@wordpress/element";
+import { _x, sprintf } from '@wordpress/i18n';
+import { ToolbarButton } from '@wordpress/components';
+import { useMemo } from '@wordpress/element';
 import { postExcerpt as icon } from '@wordpress/icons';
 
 /**
@@ -12,36 +12,41 @@ import { postExcerpt as icon } from '@wordpress/icons';
  * @return {unknown}
  * @constructor
  */
-const NCB_MetaExcerptControl = ( { value, setAttributes, isDisabled = false } ) => {
+const NCB_MetaExcerptControl = ({
+	value,
+	setAttributes,
+	isDisabled = false,
+}) => {
 	// On update `value` the controller will be rendered.
-	return useMemo( () => {
+	return useMemo(() => {
 		return (
 			<ToolbarButton
-				onClick={ () => setAttributes( { excerpt: ! value } ) }
-				icon={ icon }
-				label={ sprintf( '%s %s',
-					!! value
+				onClick={() => setAttributes({ excerpt: !value })}
+				icon={icon}
+				label={sprintf(
+					'%s %s',
+					!!value
 						? _x(
-							'Disable',
-							'ncb-denhaag/meta: Control label',
-							'nlds-community-blocks'
-						)
+								'Disable',
+								'ncb-denhaag/meta: Control label',
+								'nlds-community-blocks'
+						  )
 						: _x(
-							'Enable',
-							'ncb-denhaag/meta: Control label',
-							'nlds-community-blocks'
-						),
+								'Enable',
+								'ncb-denhaag/meta: Control label',
+								'nlds-community-blocks'
+						  ),
 					_x(
 						'Excerpt',
 						'ncb-denhaag/meta: Control label',
 						'nlds-community-blocks'
 					)
-				) }
-				isPressed={ value }
-				disabled={ isDisabled }
+				)}
+				isPressed={value}
+				disabled={isDisabled}
 			/>
 		);
-	}, [ value, isDisabled ] );
+	}, [value, isDisabled]);
 };
 
 export default NCB_MetaExcerptControl;

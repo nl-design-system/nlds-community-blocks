@@ -8,5 +8,5 @@ const { name } = metadata;
 registerBlockType(name, {
 	...metadata,
 	edit,
-	save
+	save,
 });

@@ -17,12 +17,24 @@
 		margin-block-start: 0;
 
 		@media (min-width: 640px) {
-			--denhaag-description-list-detail-padding-block-end: var(--denhaag-description-list-lg-detail-padding-block-end);
-			--denhaag-description-list-detail-padding-block-start: var(--denhaag-description-list-lg-detail-padding-block-start);
-			--denhaag-description-list-title-padding-block-end: var(--denhaag-description-list-lg-title-padding-block-end);
-			--denhaag-description-list-title-padding-block-start: var(--denhaag-description-list-lg-title-padding-block-start);
-			--denhaag-description-list-padding-inline-end: var(--denhaag-description-list-lg-padding-inline-end);
-			--denhaag-description-list-padding-inline-start: var(--denhaag-description-list-lg-padding-inline-start);
+			--denhaag-description-list-detail-padding-block-end: var(
+				--denhaag-description-list-lg-detail-padding-block-end
+			);
+			--denhaag-description-list-detail-padding-block-start: var(
+				--denhaag-description-list-lg-detail-padding-block-start
+			);
+			--denhaag-description-list-title-padding-block-end: var(
+				--denhaag-description-list-lg-title-padding-block-end
+			);
+			--denhaag-description-list-title-padding-block-start: var(
+				--denhaag-description-list-lg-title-padding-block-start
+			);
+			--denhaag-description-list-padding-inline-end: var(
+				--denhaag-description-list-lg-padding-inline-end
+			);
+			--denhaag-description-list-padding-inline-start: var(
+				--denhaag-description-list-lg-padding-inline-start
+			);
 
 			grid-template-columns: 1fr 2fr;
 		}
@@ -38,9 +50,9 @@
 	}
 
 	@media (min-width: 640px) {
-
 		&__title {
-			border-bottom: 1px solid var(--denhaag-description-list-border-color);
+			border-bottom: 1px solid
+				var(--denhaag-description-list-border-color);
 		}
 	}
 }

@@ -1,99 +1,88 @@
 {
-    "$schema" : "https://schemas.wp.org/trunk/block.json",
-    "title" : "Paragraph",
-    "description" : "Paragraph block description",
-    "icon" : "editor-paragraph",
-    "name" : "ncb-denhaag/paragraph",
-    "category" : "nlds-community-denhaag-blocks",
-    "attributes" : {
-        "allowLinks" : {
-            "type" : "boolean",
-            "default" : true
-        },
-        "content" : {
-            "type" : "string",
-            "source" : "html",
-            "selector" : ".utrecht-paragraph"
-        },
-        "variation" : {
-            "type" : "string",
-            "default" : "",
-            "enum" : [
-                "small",
-                "lead",
-                "detail"
-            ]
-        }
-    },
-    "example" : {
-        "attributes" : {
-            "content" : "This shows the default paragraph content."
-        }
-    },
-    "style" : [
-        "ncb-denhaag-typography",
-        "ncb-denhaag-link"
-    ],
-    "supports" : {
-        "align" : false,
-        "className" : false,
-        "customClassName" : false,
-        "html" : false
-    },
-    "variations" : [
-        {
-            "name" : "ncb-denhaag/paragraph-small",
-            "title" : "Small Paragraph",
-            "attributes" : {
-                "variation" : "small"
-            },
-            "example" : {
-                "attributes" : {
-                    "content" : "This shows the small paragraph content."
-                }
-            }
-        },
-        {
-            "name" : "ncb-denhaag/paragraph-lead",
-            "title" : "Paragraph Lead",
-            "attributes" : {
-                "variation" : "lead"
-            },
-            "example" : {
-                "attributes" : {
-                    "content" : "This shows the lead paragraph content."
-                }
-            }
-        },
-        {
-            "name" : "ncb-denhaag/paragraph-lead",
-            "title" : "Paragraph Distanced",
-            "attributes" : {
-                "variation" : "distanced"
-            },
-            "example" : {
-                "attributes" : {
-                    "content" : "This shows the lead paragraph content."
-                }
-            }
-        },
-        {
-            "name" : "ncb-denhaag/paragraph-detail",
-            "title" : "Paragraph Detail",
-            "attributes" : {
-                "variation" : "denhaag-detail"
-            },
-            "example" : {
-                "attributes" : {
-                    "content" : "This shows the Den Haag Detail paragraph content."
-                }
-            }
-        }
-    ],
-    "keywords" : [
-        "content",
-        "denhaag",
-        "text"
-    ],
-    "version" : "2.0.0"
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"title": "Paragraph",
+	"description": "Paragraph block description",
+	"icon": "editor-paragraph",
+	"name": "ncb-denhaag/paragraph",
+	"category": "nlds-community-denhaag-blocks",
+	"attributes": {
+		"allowLinks": {
+			"type": "boolean",
+			"default": true
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": ".utrecht-paragraph"
+		},
+		"variation": {
+			"type": "string",
+			"default": "",
+			"enum": ["small", "lead", "detail"]
+		}
+	},
+	"example": {
+		"attributes": {
+			"content": "This shows the default paragraph content."
+		}
+	},
+	"style": ["ncb-denhaag-typography", "ncb-denhaag-link"],
+	"supports": {
+		"align": false,
+		"className": false,
+		"customClassName": false,
+		"html": false
+	},
+	"variations": [
+		{
+			"name": "ncb-denhaag/paragraph-small",
+			"title": "Small Paragraph",
+			"attributes": {
+				"variation": "small"
+			},
+			"example": {
+				"attributes": {
+					"content": "This shows the small paragraph content."
+				}
+			}
+		},
+		{
+			"name": "ncb-denhaag/paragraph-lead",
+			"title": "Paragraph Lead",
+			"attributes": {
+				"variation": "lead"
+			},
+			"example": {
+				"attributes": {
+					"content": "This shows the lead paragraph content."
+				}
+			}
+		},
+		{
+			"name": "ncb-denhaag/paragraph-lead",
+			"title": "Paragraph Distanced",
+			"attributes": {
+				"variation": "distanced"
+			},
+			"example": {
+				"attributes": {
+					"content": "This shows the lead paragraph content."
+				}
+			}
+		},
+		{
+			"name": "ncb-denhaag/paragraph-detail",
+			"title": "Paragraph Detail",
+			"attributes": {
+				"variation": "denhaag-detail"
+			},
+			"example": {
+				"attributes": {
+					"content": "This shows the Den Haag Detail paragraph content."
+				}
+			}
+		}
+	],
+	"keywords": ["content", "denhaag", "text"],
+	"version": "2.0.0"
 }

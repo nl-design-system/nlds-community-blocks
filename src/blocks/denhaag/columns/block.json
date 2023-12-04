@@ -1,38 +1,31 @@
 {
-    "title" : "Columns",
-    "description" : "Add a block that displays content in multiple columns, then add whatever content blocks you’d like.",
-    "name" : "ncb-denhaag/columns",
-    "category" : "nlds-community-denhaag-blocks-layout",
-    "attributes" : {
-        "columns" : {
-            "type" : "number",
-            "default" : 2
-        },
-        "layout" : {
-            "type" : "string",
-            "default" : ""
-        }
-    },
-    "supports" : {
-        "alignWide" : false,
-        "className" : false,
-        "customClassName" : false,
-        "reusable" : true,
-        "html" : false,
-        "transforms" : false
-    },
-    "providesContext" : {
-        "ncb-denhaag/columns": "columns"
-    },
-    "style" : [
-        "ncb-denhaag-columns-block"
-    ],
-    "script" : [
-        "ncb-denhaag-columns-block"
-    ],
-    "version" : "1.0.0",
-    "keywords" : [
-        "columns",
-        "denhaag"
-    ]
+	"title": "Columns",
+	"description": "Add a block that displays content in multiple columns, then add whatever content blocks you’d like.",
+	"name": "ncb-denhaag/columns",
+	"category": "nlds-community-denhaag-blocks-layout",
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": 2
+		},
+		"layout": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"alignWide": false,
+		"className": false,
+		"customClassName": false,
+		"reusable": true,
+		"html": false,
+		"transforms": false
+	},
+	"providesContext": {
+		"ncb-denhaag/columns": "columns"
+	},
+	"style": ["ncb-denhaag-columns-block"],
+	"script": ["ncb-denhaag-columns-block"],
+	"version": "1.0.0",
+	"keywords": ["columns", "denhaag"]
 }

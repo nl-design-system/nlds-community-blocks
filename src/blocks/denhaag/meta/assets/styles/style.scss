@@ -4,107 +4,111 @@
 // @todo: Remove denhaag-event-date from NLDS Github -> Merged into denhaag-meta;
 
 .denhaag-theme {
-  // .denhaag-meta__meta
-  --denhaag-meta-meta-color: var(--denhaag-color-blue-4);
-  --denhaag-meta-meta-border-color: var(--denhaag-color-blue-2);
-  --denhaag-meta-meta-margin-block: 0;
-  --denhaag-meta-meta-font-family: var(--denhaag-typography-sans-serif-font-family);
-  --denhaag-meta-meta-font-size: var(--denhaag-typography-scale-s-font-size);
-  --denhaag-meta-meta-font-weight: var(--denhaag-typography-weight-bold);
-  --denhaag-meta-meta-letter-spacing: 1px;
-  --denhaag-meta-meta-line-height: var(--denhaag-typography-scale-base-line-height);
-  --denhaag-meta-meta-text-transform: uppercase;
+	// .denhaag-meta__meta
+	--denhaag-meta-meta-color: var(--denhaag-color-blue-4);
+	--denhaag-meta-meta-border-color: var(--denhaag-color-blue-2);
+	--denhaag-meta-meta-margin-block: 0;
+	--denhaag-meta-meta-font-family: var(
+		--denhaag-typography-sans-serif-font-family
+	);
+	--denhaag-meta-meta-font-size: var(--denhaag-typography-scale-s-font-size);
+	--denhaag-meta-meta-font-weight: var(--denhaag-typography-weight-bold);
+	--denhaag-meta-meta-letter-spacing: 1px;
+	--denhaag-meta-meta-line-height: var(
+		--denhaag-typography-scale-base-line-height
+	);
+	--denhaag-meta-meta-text-transform: uppercase;
 
-  // .denhaag-meta__share-wrapper
-  --denhaag-meta-share-wrapper-gap: var(--denhaag-space-block-xs);
+	// .denhaag-meta__share-wrapper
+	--denhaag-meta-share-wrapper-gap: var(--denhaag-space-block-xs);
 }
 
 .denhaag-meta {
-  // .denhaag-divider
-  --denhaag-divider-border-color: var(--denhaag-meta-meta-border-color);
-  --denhaag-divider-margin-block-start: var(--denhaag-meta-meta-margin-block);
-  --denhaag-divider-margin-block-end: var(--denhaag-meta-meta-margin-block);
+	// .denhaag-divider
+	--denhaag-divider-border-color: var(--denhaag-meta-meta-border-color);
+	--denhaag-divider-margin-block-start: var(--denhaag-meta-meta-margin-block);
+	--denhaag-divider-margin-block-end: var(--denhaag-meta-meta-margin-block);
 
-  // .denhaag-button
-  --denhaag-button-font-size: var(--denhaag-typography-scale-lg-font-size);
-  --denhaag-button-secondary-action-color: var(--denhaag-color-grey-4);
-  --denhaag-button-secondary-action-border-color: var(--denhaag-color-grey-2);
+	// .denhaag-button
+	--denhaag-button-font-size: var(--denhaag-typography-scale-lg-font-size);
+	--denhaag-button-secondary-action-color: var(--denhaag-color-grey-4);
+	--denhaag-button-secondary-action-border-color: var(--denhaag-color-grey-2);
 
-
-  display: flex;
-  flex-direction: column;
-  gap: var(--denhaag-space-block-sm);
-  padding-block-end: var(--denhaag-space-block-2xl);
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--denhaag-space-block-sm);
+	padding-block-end: var(--denhaag-space-block-2xl);
+	width: 100%;
 }
 
 .denhaag-meta + .utrecht-paragraph {
-  margin-block-start: 0;
+	margin-block-start: 0;
 }
 
 .denhaag-theme .utrecht-heading-1 + .utrecht-paragraph {
-  margin-block-start: var(--denhaag-space-block-2xl);
+	margin-block-start: var(--denhaag-space-block-2xl);
 }
 
 .denhaag-meta__buttons {
-  container-type: inline-size;
-  display: flex;
-  flex-direction: row;
-  gap: var(--denhaag-space-block-sm);
+	container-type: inline-size;
+	display: flex;
+	flex-direction: row;
+	gap: var(--denhaag-space-block-sm);
 }
 
 .denhaag-meta__meta {
-  color: var(--denhaag-meta-meta-color);
-  display: flex;
-  flex-direction: row;
-  font: var(--denhaag-meta-meta-font-weight) var(--denhaag-meta-meta-font-size) / var(--denhaag-meta-meta-line-height) var(--denhaag-meta-meta-font-family);
-  letter-spacing: var(--denhaag-meta-meta-letter-spacing);
-  order: -1;
-  text-transform: var(--denhaag-meta-meta-text-transform);
+	color: var(--denhaag-meta-meta-color);
+	display: flex;
+	flex-direction: row;
+	font: var(--denhaag-meta-meta-font-weight)
+		var(--denhaag-meta-meta-font-size) /
+		var(--denhaag-meta-meta-line-height)
+		var(--denhaag-meta-meta-font-family);
+	letter-spacing: var(--denhaag-meta-meta-letter-spacing);
+	order: -1;
+	text-transform: var(--denhaag-meta-meta-text-transform);
 }
 
 .denhaag-meta__meta-item {
-  align-self: center; // align-self instead of align-content on parent due to the .denhaag-divider will break.
+	align-self: center; // align-self instead of align-content on parent due to the .denhaag-divider will break.
 
-  &:has(svg) {
-	display: inline-flex;
-	gap: var(--denhaag-space-inline-xs);
-	align-items: center;
-  }
+	&:has(svg) {
+		display: inline-flex;
+		gap: var(--denhaag-space-inline-xs);
+		align-items: center;
+	}
 }
 
 .denhaag-meta__share {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--denhaag-space-block-sm);
-  flex-direction: column;
+	display: flex;
+	align-items: flex-start;
+	gap: var(--denhaag-space-block-sm);
+	flex-direction: column;
 }
 
 @container (min-width: 480px) {
-
-  .denhaag-meta__share {
-	align-items: center;
-	flex-direction: row;
-  }
+	.denhaag-meta__share {
+		align-items: center;
+		flex-direction: row;
+	}
 }
 
 .denhaag-meta__share-wrapper {
-  display: flex;
-  gap: var(--denhaag-meta-share-wrapper-gap);
-  flex-wrap: wrap;
+	display: flex;
+	gap: var(--denhaag-meta-share-wrapper-gap);
+	flex-wrap: wrap;
 
-  [aria-expanded="false"] ~ & {
-	display: none;
-  }
+	[aria-expanded="false"] ~ & {
+		display: none;
+	}
 
-  .denhaag-button {
-	aspect-ratio: 1;
-	box-sizing: border-box;
-	height: auto;
-  }
+	.denhaag-button {
+		aspect-ratio: 1;
+		box-sizing: border-box;
+		height: auto;
+	}
 
-  .denhaag-button--icon-only .denhaag-button__icon {
-	line-height: 0;
-  }
+	.denhaag-button--icon-only .denhaag-button__icon {
+		line-height: 0;
+	}
 }
-

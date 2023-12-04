@@ -1,54 +1,40 @@
 {
-    "title" : "Highlighted Links",
-    "description" : "Highlighted links are important links at the top of your page. Use highlighted links when there are links you want to provide the user on this specific page.",
-    "icon" : "editor-justify",
-    "name" : "ncb-denhaag/highlighted-links",
-    "category" : "nlds-community-denhaag-blocks",
-    "attributes" : {
-        "level" : {
-            "type" : "number",
-            "default" : 4,
-            "enum" : [
-                2,
-                3,
-                4
-            ]
-        },
-        "appearance" : {
-            "type" : "number",
-            "default" : 4,
-            "enum" : [
-                2,
-                3,
-                4
-            ]
-        },
-        "caption" : {
-            "type" : "string",
-            "default" : null
-        }
-    },
-    "supports" : {
-        "className" : false,
-        "customClassName" : false,
-        "html" : false
-    },
-    "style" : [
-        "ncb-denhaag-highlighted-links-block",
-        "ncb-denhaag-link-group-block",
-        "ncb-denhaag-heading-block"
-    ],
-    "editorStyle": [
-        "ncb-denhaag-heading-block-editor",
-        "ncb-denhaag-link-group-block-editor"
-    ],
-    "keywords" : [
-        "denhaag",
-        "group",
-        "highlighted",
-        "highlight",
-        "links"
-    ],
-    "textdomain": "nlds-community-blocks",
-    "version" : "1.0.0"
+	"title": "Highlighted Links",
+	"description": "Highlighted links are important links at the top of your page. Use highlighted links when there are links you want to provide the user on this specific page.",
+	"icon": "editor-justify",
+	"name": "ncb-denhaag/highlighted-links",
+	"category": "nlds-community-denhaag-blocks",
+	"attributes": {
+		"level": {
+			"type": "number",
+			"default": 4,
+			"enum": [2, 3, 4]
+		},
+		"appearance": {
+			"type": "number",
+			"default": 4,
+			"enum": [2, 3, 4]
+		},
+		"caption": {
+			"type": "string",
+			"default": null
+		}
+	},
+	"supports": {
+		"className": false,
+		"customClassName": false,
+		"html": false
+	},
+	"style": [
+		"ncb-denhaag-highlighted-links-block",
+		"ncb-denhaag-link-group-block",
+		"ncb-denhaag-heading-block"
+	],
+	"editorStyle": [
+		"ncb-denhaag-heading-block-editor",
+		"ncb-denhaag-link-group-block-editor"
+	],
+	"keywords": ["denhaag", "group", "highlighted", "highlight", "links"],
+	"textdomain": "nlds-community-blocks",
+	"version": "1.0.0"
 }

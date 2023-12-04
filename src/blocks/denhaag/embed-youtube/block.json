@@ -1,63 +1,55 @@
 {
-    "$schema" : "https://schemas.wp.org/trunk/block.json",
-    "title" : "YouTube embed",
-    "description" : "Embed a YouTube video",
-    "icon" : "youtube",
-    "name" : "ncb-denhaag/embed-youtube",
-    "category" : "nlds-community-denhaag-blocks",
-    "attributes" : {
-        "id": {
-            "type": "string",
-            "default" : ""
-        },
-        "autoplay": {
-            "type": "boolean",
-            "default": false
-        },
-        "controls": {
-            "type": "boolean",
-            "default": true
-        },
-        "loop": {
-            "type": "boolean",
-            "default": false
-        },
-        "mute": {
-            "type": "boolean",
-            "default": true
-        },
-        "portrait": {
-            "type": "boolean",
-            "default": false
-        },
-        "description": {
-            "type": "string"
-        }
-    },
-    "example" : {
-        "attributes" : {
-            "id": "BHACKCNDMW8",
-            "autoplay": true,
-            "controls": false,
-            "loop": true,
-            "mute": true
-        }
-    },
-    "supports" : {
-        "className" : false,
-        "customClassName" : false,
-        "html" : false
-    },
-    "style" : [
-        "ncb-denhaag-embed-youtube-block"
-    ],
-    "editorStyle" : [
-        "ncb-denhaag-embed-youtube-block-editor"
-    ],
-    "version" : "1.0.0",
-    "keywords" : [
-        "denhaag",
-        "video",
-        "YouTube"
-    ]
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"title": "YouTube embed",
+	"description": "Embed a YouTube video",
+	"icon": "youtube",
+	"name": "ncb-denhaag/embed-youtube",
+	"category": "nlds-community-denhaag-blocks",
+	"attributes": {
+		"id": {
+			"type": "string",
+			"default": ""
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": false
+		},
+		"controls": {
+			"type": "boolean",
+			"default": true
+		},
+		"loop": {
+			"type": "boolean",
+			"default": false
+		},
+		"mute": {
+			"type": "boolean",
+			"default": true
+		},
+		"portrait": {
+			"type": "boolean",
+			"default": false
+		},
+		"description": {
+			"type": "string"
+		}
+	},
+	"example": {
+		"attributes": {
+			"id": "BHACKCNDMW8",
+			"autoplay": true,
+			"controls": false,
+			"loop": true,
+			"mute": true
+		}
+	},
+	"supports": {
+		"className": false,
+		"customClassName": false,
+		"html": false
+	},
+	"style": ["ncb-denhaag-embed-youtube-block"],
+	"editorStyle": ["ncb-denhaag-embed-youtube-block-editor"],
+	"version": "1.0.0",
+	"keywords": ["denhaag", "video", "YouTube"]
 }

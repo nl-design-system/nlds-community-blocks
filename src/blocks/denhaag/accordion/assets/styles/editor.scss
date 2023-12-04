@@ -1,4 +1,6 @@
-[data-type="ncb-denhaag/accordion"] [data-type="ncb-denhaag/accordion-item"] + .block-list-appender.block-list-appender {
+[data-type="ncb-denhaag/accordion"]
+	[data-type="ncb-denhaag/accordion-item"]
+	+ .block-list-appender.block-list-appender {
 	margin-inline: auto;
 	margin-block-start: 1rem;
 	position: static;

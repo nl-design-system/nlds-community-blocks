@@ -1,6 +1,6 @@
-import { _x } from "@wordpress/i18n";
-import { ToolbarButton } from "@wordpress/components";
-import { useMemo } from "@wordpress/element";
+import { _x } from '@wordpress/i18n';
+import { ToolbarButton } from '@wordpress/components';
+import { useMemo } from '@wordpress/element';
 import { title } from '@wordpress/icons';
 
 /**
@@ -12,23 +12,27 @@ import { title } from '@wordpress/icons';
  * @return {unknown}
  * @constructor
  */
-const NCB_ImageCaptionControl = ( { value = false, isDisabled = false, setAttributes } ) => {
+const NCB_ImageCaptionControl = ({
+	value = false,
+	isDisabled = false,
+	setAttributes,
+}) => {
 	// On update `value` the controller will be rendered.
-	return useMemo( () => {
+	return useMemo(() => {
 		return (
 			<ToolbarButton
-				onClick={ () => setAttributes( { hasCaption: ! value } ) }
-				icon={ title }
-				label={ _x(
+				onClick={() => setAttributes({ hasCaption: !value })}
+				icon={title}
+				label={_x(
 					'Show image caption',
 					'ncb-denhaag/image: Control label',
 					'nlds-community-blocks'
-				) }
-				isPressed={ value }
-				disabled={ isDisabled }
+				)}
+				isPressed={value}
+				disabled={isDisabled}
 			/>
 		);
-	}, [ value, isDisabled ] );
+	}, [value, isDisabled]);
 };
 
 export default NCB_ImageCaptionControl;

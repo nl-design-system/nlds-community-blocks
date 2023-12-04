@@ -6,9 +6,9 @@ import save from './assets/scripts/save';
 import metadata from './block.json';
 const { name } = metadata;
 
-registerBlockType( name, {
+registerBlockType(name, {
 	...metadata,
 	icon,
 	edit,
-	save
-} );
+	save,
+});

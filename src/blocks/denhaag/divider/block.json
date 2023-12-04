@@ -1,21 +1,15 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/block.json",
-  "title": "Divider",
-  "description": "Divider description",
-  "icon": "minus",
-  "name": "ncb-denhaag/divider",
-  "category": "nlds-community-denhaag-blocks",
-  "supports": {
-	"className": false,
-	"customClassName": false
-  },
-  "style": [
-	"ncb-denhaag-divider-block"
-  ],
-  "version": "1.0.0",
-  "keywords": [
-	"denhaag",
-	"divider",
-	"separator"
-  ]
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"title": "Divider",
+	"description": "Divider description",
+	"icon": "minus",
+	"name": "ncb-denhaag/divider",
+	"category": "nlds-community-denhaag-blocks",
+	"supports": {
+		"className": false,
+		"customClassName": false
+	},
+	"style": ["ncb-denhaag-divider-block"],
+	"version": "1.0.0",
+	"keywords": ["denhaag", "divider", "separator"]
 }

@@ -1,5 +1,5 @@
-import { useMemo } from "@wordpress/element";
-import { ToolbarButton } from "@wordpress/components";
+import { useMemo } from '@wordpress/element';
+import { ToolbarButton } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { ReactComponent as icon } from '../../icons/autoplay.svg';
 
@@ -12,19 +12,28 @@ import { ReactComponent as icon } from '../../icons/autoplay.svg';
  * @returns {unknown}
  * @constructor
  */
-const NCB_EmbedYouTubeAutoPlayControls = ( { value = false, isDisabled = false, setAttributes } ) => {
-	return useMemo( () => {
-		const label = !! value ? __( 'Disable', 'nlds-community-blocks' ) : __( 'Enable', 'nlds-community-blocks' );
+const NCB_EmbedYouTubeAutoPlayControls = ({
+	value = false,
+	isDisabled = false,
+	setAttributes,
+}) => {
+	return useMemo(() => {
+		const label = !!value
+			? __('Disable', 'nlds-community-blocks')
+			: __('Enable', 'nlds-community-blocks');
 		return (
 			<ToolbarButton
-				icon={ icon }
-				label={ sprintf( __( '%s autoplay', 'nlds-community-blocks' ), label ) }
-				onClick={ () => setAttributes( { autoplay: ! value } ) }
-				isActive={ !! value }
-				disabled={ !! isDisabled }
+				icon={icon}
+				label={sprintf(
+					__('%s autoplay', 'nlds-community-blocks'),
+					label
+				)}
+				onClick={() => setAttributes({ autoplay: !value })}
+				isActive={!!value}
+				disabled={!!isDisabled}
 			/>
 		);
-	}, [ value ] );
+	}, [value]);
 };
 
 export default NCB_EmbedYouTubeAutoPlayControls;
