@@ -1,5 +1,5 @@
-import { useMemo } from "@wordpress/element";
-import { ToolbarButton } from "@wordpress/components";
+import { useMemo } from '@wordpress/element';
+import { ToolbarButton } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { ReactComponent as icon } from '../../icons/repeat.svg';
 
@@ -12,20 +12,26 @@ import { ReactComponent as icon } from '../../icons/repeat.svg';
  * @returns {unknown}
  * @constructor
  */
-const NCB_EmbedYouTubeLoopControl = ( { value = false, isDisabled = false, setAttributes } ) => {
-	return useMemo( () => {
-		const label = !! value ? __( 'Unloop', 'nlds-community-blocks' ) : __( 'Loop', 'nlds-community-blocks' );
+const NCB_EmbedYouTubeLoopControl = ({
+	value = false,
+	isDisabled = false,
+	setAttributes,
+}) => {
+	return useMemo(() => {
+		const label = !!value
+			? __('Unloop', 'nlds-community-blocks')
+			: __('Loop', 'nlds-community-blocks');
 
 		return (
 			<ToolbarButton
-				icon={ icon }
-				label={ sprintf( __( '%s video', 'nlds-community-blocks' ), label ) }
-				onClick={ () => setAttributes( { loop: ! value } ) }
-				isActive={ !! value }
-				disabled={ !! isDisabled }
+				icon={icon}
+				label={sprintf(__('%s video', 'nlds-community-blocks'), label)}
+				onClick={() => setAttributes({ loop: !value })}
+				isActive={!!value}
+				disabled={!!isDisabled}
 			/>
 		);
-	}, [ value ] );
+	}, [value]);
 };
 
 export default NCB_EmbedYouTubeLoopControl;

@@ -1,6 +1,6 @@
-import { _x } from "@wordpress/i18n";
-import { ToolbarButton } from "@wordpress/components";
-import { useMemo } from "@wordpress/element";
+import { _x } from '@wordpress/i18n';
+import { ToolbarButton } from '@wordpress/components';
+import { useMemo } from '@wordpress/element';
 
 /**
  * Returns the Variation Toolbar Controller.
@@ -10,22 +10,22 @@ import { useMemo } from "@wordpress/element";
  * @return {unknown}
  * @constructor
  */
-const NCB_HeadingScreenreaderControl = ( { value, setAttributes } ) => {
+const NCB_HeadingScreenreaderControl = ({ value, setAttributes }) => {
 	// On update `value` the controller will be rendered.
-	return useMemo( () => {
+	return useMemo(() => {
 		return (
 			<ToolbarButton
-				onClick={ () => setAttributes( { srOnly: ! value } ) }
+				onClick={() => setAttributes({ srOnly: !value })}
 				icon="desktop"
-				label={ _x(
+				label={_x(
 					'Visible for screen readers only',
 					'ncb-denhaag/heading: Control label',
 					'nlds-community-blocks'
-				) }
-				isPressed={ value }
+				)}
+				isPressed={value}
 			/>
 		);
-	}, [ value ] );
+	}, [value]);
 };
 
 export default NCB_HeadingScreenreaderControl;

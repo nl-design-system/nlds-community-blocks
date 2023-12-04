@@ -1,7 +1,7 @@
-import NCB_SetLinkControl from "./assets/scripts/ncb-set-link-control";
-import NCB_UnsetLinkControl from "./assets/scripts/ncb-unset-link-control";
+import NCB_SetLinkControl from './assets/scripts/ncb-set-link-control';
+import NCB_UnsetLinkControl from './assets/scripts/ncb-unset-link-control';
 import { ToolbarGroup } from '@wordpress/components';
-import { useMemo } from "@wordpress/element";
+import { useMemo } from '@wordpress/element';
 
 /**
  *
@@ -12,24 +12,31 @@ import { useMemo } from "@wordpress/element";
  * @return {JSX.Element}
  * @constructor
  */
-const NCB_LinkControls = (
-	{
-		value = {},
-		attribute = 'link',
-		setAttributes,
-		options = {}
-	}
-) => {
-	return useMemo( () => {
+const NCB_LinkControls = ({
+	value = {},
+	attribute = 'link',
+	setAttributes,
+	options = {},
+}) => {
+	return useMemo(() => {
 		// Disable UnsetLinkControl if no value is set.
-		const isDisabled = ! value || 0 === Object.keys( value ).length;
+		const isDisabled = !value || 0 === Object.keys(value).length;
 		return (
 			<ToolbarGroup>
-				<NCB_SetLinkControl attribute={ attribute } value={ value } setAttributes={ setAttributes } options={ options } />
-				<NCB_UnsetLinkControl attribute={ attribute } isDisabled={ isDisabled } setAttributes={ setAttributes } />
+				<NCB_SetLinkControl
+					attribute={attribute}
+					value={value}
+					setAttributes={setAttributes}
+					options={options}
+				/>
+				<NCB_UnsetLinkControl
+					attribute={attribute}
+					isDisabled={isDisabled}
+					setAttributes={setAttributes}
+				/>
 			</ToolbarGroup>
 		);
-	}, [ value ] );
+	}, [value]);
 };
 
 export default NCB_LinkControls;

@@ -1,6 +1,6 @@
-import { _x, __ } from "@wordpress/i18n";
-import { ToolbarButton, ToolbarGroup } from "@wordpress/components";
-import { useMemo } from "@wordpress/element";
+import { _x, __ } from '@wordpress/i18n';
+import { ToolbarButton, ToolbarGroup } from '@wordpress/components';
+import { useMemo } from '@wordpress/element';
 import { resizeCornerNE, symbolFilled } from '@wordpress/icons';
 
 /**
@@ -12,9 +12,12 @@ import { resizeCornerNE, symbolFilled } from '@wordpress/icons';
  * @return {unknown}
  * @constructor
  */
-const NCB_ButtonSizeControl = ( { value = false, isDisabled = false, setAttributes } ) => {
-
-/*
+const NCB_ButtonSizeControl = ({
+	value = false,
+	isDisabled = false,
+	setAttributes,
+}) => {
+	/*
 	const onSizeChange = ( newKey ) => {
 		setActiveSize( newKey );
 		onChange( newKey );
@@ -38,28 +41,50 @@ const NCB_ButtonSizeControl = ( { value = false, isDisabled = false, setAttribut
 	);
  */
 	// On update `value` the controller will be rendered.
-	return useMemo( () => {
-		const _SIZES = [ {
-			label: _x( 'Default', 'ncb-denhaag/button: Control label', 'nlds-community-blocks' ),
-			value: 'default',
-		}, {
-			label: _x( 'Large', 'ncb-denhaag/button: Control label', 'nlds-community-blocks' ),
-			value: 'large'
-		} ];
+	return useMemo(() => {
+		const _SIZES = [
+			{
+				label: _x(
+					'Default',
+					'ncb-denhaag/button: Control label',
+					'nlds-community-blocks'
+				),
+				value: 'default',
+			},
+			{
+				label: _x(
+					'Large',
+					'ncb-denhaag/button: Control label',
+					'nlds-community-blocks'
+				),
+				value: 'large',
+			},
+		];
 
 		return (
 			<ToolbarGroup>
-				{ _SIZES.map( ( s ) => {
-					return (<ToolbarButton
-						onClick={ () => setAttributes( { size: s.value } ) }
-						label={ sprintf( _x( 'Set %s button style', 'ncb-denhaag/button: Control label', 'nlds-community-blocks' ), s.label ) }
-						isPressed={ s.value === value }
-						disabled={ isDisabled }
-					>{s.label}</ToolbarButton>)
-				} ) }
+				{_SIZES.map((s) => {
+					return (
+						<ToolbarButton
+							onClick={() => setAttributes({ size: s.value })}
+							label={sprintf(
+								_x(
+									'Set %s button style',
+									'ncb-denhaag/button: Control label',
+									'nlds-community-blocks'
+								),
+								s.label
+							)}
+							isPressed={s.value === value}
+							disabled={isDisabled}
+						>
+							{s.label}
+						</ToolbarButton>
+					);
+				})}
 			</ToolbarGroup>
 		);
-	}, [ value, isDisabled ] );
+	}, [value, isDisabled]);
 };
 
 export default NCB_ButtonSizeControl;

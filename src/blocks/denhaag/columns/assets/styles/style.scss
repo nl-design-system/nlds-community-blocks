@@ -6,7 +6,6 @@
 	grid-template-columns: var(--denhaag-columns-grid-template, 1fr);
 
 	@media (min-width: 768px) {
-
 		&,
 		&--single {
 			--denhaag-columns-grid-template: 1fr;
@@ -44,7 +43,6 @@
 	}
 
 	@media (min-width: 768px) {
-
 		.denhaag-highlighted-links + .sr-only + & {
 			--denhaag-columns-padding-block-start: 3.75rem;
 		}

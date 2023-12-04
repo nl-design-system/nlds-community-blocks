@@ -10,5 +10,5 @@ registerBlockType(name, {
 	...metadata,
 	icon,
 	edit,
-	save
+	save,
 });

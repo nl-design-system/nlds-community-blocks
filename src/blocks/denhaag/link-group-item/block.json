@@ -1,36 +1,26 @@
 {
-    "title" : "Link item",
-    "description" : "A link item",
-    "icon" : "admin-links",
-    "name" : "ncb-denhaag/link-group-item",
-    "category" : "nlds-community-denhaag-blocks",
-    "parent" : [
-        "ncb-denhaag/link-group",
-        "ncb-denhaag/highlighted-links"
-    ],
-    "attributes" : {
-        "link" : {
-            "type" : "object"
-        }
-    },
-    "supports" : {
-        "className" : false,
-        "customClassName" : false,
-        "html" : false
-    },
-    "style": [
-        "ncb-denhaag-icon",
-        "ncb-denhaag-link"
-    ],
-    "editorStyle" : [
-        "ncb-denhaag-link-item-block-editor",
-        "ncb-denhaag-link-block-editor"
-    ],
-    "keywords" : [
-        "denhaag",
-        "grouped",
-        "link"
-    ],
-    "textdomain" : "nlds-community-blocks",
-    "version" : "1.0.0"
+	"title": "Link item",
+	"description": "A link item",
+	"icon": "admin-links",
+	"name": "ncb-denhaag/link-group-item",
+	"category": "nlds-community-denhaag-blocks",
+	"parent": ["ncb-denhaag/link-group", "ncb-denhaag/highlighted-links"],
+	"attributes": {
+		"link": {
+			"type": "object"
+		}
+	},
+	"supports": {
+		"className": false,
+		"customClassName": false,
+		"html": false
+	},
+	"style": ["ncb-denhaag-icon", "ncb-denhaag-link"],
+	"editorStyle": [
+		"ncb-denhaag-link-item-block-editor",
+		"ncb-denhaag-link-block-editor"
+	],
+	"keywords": ["denhaag", "grouped", "link"],
+	"textdomain": "nlds-community-blocks",
+	"version": "1.0.0"
 }
