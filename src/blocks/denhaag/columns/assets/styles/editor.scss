@@ -1,24 +1,24 @@
 .editor-denhaag-columns {
-	--columns: 1;
+	--ncb-columns: 1;
 	box-shadow: 0 0 0 2px #e0e0e0;
-	padding: var(--grid-gap, 1rem);
+	padding: var(--ncb-grid-gap, 1rem);
 
 	&.has-no-layout {
-		--grid-gap: 2.5rem;
+		--ncb-grid-gap: 2.5rem;
 	}
 
 	@media (min-width: 768px) {
 		&,
 		&--single {
-			--columns: 1;
+			--ncb-columns: 1;
 		}
 
 		&--fifty-fifty {
-			--columns: 2;
+			--ncb-columns: 2;
 		}
 
 		&--one-third-two-third {
-			--grid-columns: 1fr 2fr;
+			--ncb-grid-columns: 1fr 2fr;
 
 			.wp-block-denhaag-column:first-child {
 				--denhaag-image-download-text-display-desktop: none;
@@ -26,7 +26,7 @@
 		}
 
 		&--two-third-one-third {
-			--grid-columns: 2fr 1fr;
+			--ncb-grid-columns: 2fr 1fr;
 
 			.wp-block-denhaag-column:last-child {
 				--denhaag-image-download-text-display-desktop: none;
@@ -34,7 +34,7 @@
 		}
 
 		&--one-third-one-third-one-third {
-			--grid-columns: 1fr 1fr 1fr;
+			--ncb-grid-columns: 1fr 1fr 1fr;
 
 			--denhaag-image-download-text-display-desktop: none;
 		}
@@ -62,10 +62,10 @@
 	> .block-editor-inner-blocks > .block-editor-block-list__layout {
 		display: grid;
 		grid-template-columns: var(
-			--grid-columns,
-			repeat(var(--columns, 1), 1fr)
+			--ncb-grid-columns,
+			repeat(var(--ncb-columns, 1), 1fr)
 		);
-		gap: var(--grid-gap, 1rem);
+		gap: var(--ncb-grid-gap, 1rem);
 	}
 
 	[data-type="ncb-denhaag/column"] {
@@ -76,10 +76,10 @@
 		width: 100%;
 
 		.wp-block {
-			margin-bottom: calc(var(--grid-gap, 1rem) / 2);
-			margin-top: calc(var(--grid-gap, 1rem) / 2);
-			margin-left: calc(var(--grid-gap, 1rem) / 2);
-			margin-right: calc(var(--grid-gap, 1rem) / 2);
+			margin-bottom: calc(var(--ncb-grid-gap, 1rem) / 2);
+			margin-top: calc(var(--ncb-grid-gap, 1rem) / 2);
+			margin-left: calc(var(--ncb-grid-gap, 1rem) / 2);
+			margin-right: calc(var(--ncb-grid-gap, 1rem) / 2);
 		}
 	}
 }
