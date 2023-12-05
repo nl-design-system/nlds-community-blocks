@@ -1,4 +1,4 @@
-import { _x } from '@wordpress/i18n';
+import { sprintf, _x } from '@wordpress/i18n';
 import { ToolbarButton } from '@wordpress/components';
 import { useMemo } from '@wordpress/element';
 import { ReactComponent as HasIcon } from '../../icons/has-icon.svg';

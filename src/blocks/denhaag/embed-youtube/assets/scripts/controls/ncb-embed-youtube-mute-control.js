@@ -1,6 +1,6 @@
 import { useMemo } from '@wordpress/element';
 import { ToolbarButton } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { sprintf, __ } from '@wordpress/i18n';
 import { ReactComponent as volumeOnIcon } from '../../icons/volume-on.svg';
 import { ReactComponent as volumeOffIcon } from '../../icons/volume-off.svg';
 
