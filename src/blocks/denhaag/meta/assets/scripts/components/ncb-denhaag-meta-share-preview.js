@@ -14,6 +14,10 @@ const NCB_DenhaagMetaSharePreview = ({ showMeta = false }) => {
 	const { buttons: config } = window?.ncb_editor_variables?.denhaag?.meta;
 
 	return useMemo(() => {
+		if (!showMeta) {
+			return null;
+		}
+
 		return (
 			<div className="denhaag-meta__buttons">
 				{!!config.readspeaker && (
