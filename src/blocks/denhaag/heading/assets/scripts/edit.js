@@ -5,7 +5,12 @@ import NCB_HeadingTagControl from '../../../../../editor/ncb-heading-tag-control
 import { useLayoutEffect, useMemo } from '@wordpress/element';
 import classNames from 'classnames';
 
-export default function Edit({ attributes, setAttributes, mergeBlocks }) {
+export default function Edit({
+	attributes,
+	setAttributes,
+	mergeBlocks,
+	onReplace,
+}) {
 	/**
 	 * Return string of classNames which updates based on the variation.
 	 *
