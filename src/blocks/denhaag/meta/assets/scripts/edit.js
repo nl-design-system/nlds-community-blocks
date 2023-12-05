@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { useMemo, useState } from '@wordpress/element';
+import { useState } from '@wordpress/element';
 import { BlockControls } from '@wordpress/block-editor';
 import NCB_MetaExcerptControl from './controls/ncb-meta-excerpt-control';
 import NCB_DenhaagMetaSharePreview from './components/ncb-denhaag-meta-share-preview';

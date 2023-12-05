@@ -1,7 +1,6 @@
-import { _x, __ } from '@wordpress/i18n';
+import { _x } from '@wordpress/i18n';
 import { ToolbarButton, ToolbarGroup } from '@wordpress/components';
 import { useMemo } from '@wordpress/element';
-import { resizeCornerNE, symbolFilled } from '@wordpress/icons';
 
 /**
  * Returns the Button size Toolbar Controller.

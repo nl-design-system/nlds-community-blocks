@@ -1,7 +1,7 @@
 import { InnerBlocks } from '@wordpress/editor';
 import { useMemo } from '@wordpress/element';
 
-export default function edit({ clientId, context }) {
+export default function edit({ context }) {
 	const _CLASSES = 'denhaag-column';
 
 	const blocks = wp.blocks.getBlockTypes();
