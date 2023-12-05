@@ -7,6 +7,7 @@
 		"@wordpress/no-unsafe-wp-apis": "off",
 		"@wordpress/no-unused-vars-before-return": "off",
 		"@wordpress/i18n-translator-comments": "off",
+		"@wordpress/valid-sprintf": "warn",
 		"camelcase": "off",
 		"jsdoc/check-access": "off",
 		"jsdoc/check-alignment": "off",
