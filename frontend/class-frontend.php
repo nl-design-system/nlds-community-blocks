@@ -52,7 +52,6 @@ class Frontend {
 			],
 		];
 
-
 		foreach ( glob( NCB_ABSPATH . NCB_ASSETS_DIR . 'blocks/*', GLOB_ONLYDIR ) as $ncb_community_path ) {
 			if ( empty( $ncb_community_path ) ) {
 				continue;
@@ -125,9 +124,9 @@ class Frontend {
 
 				// Get block version, priority to package-lock.json version.
 				$ncb_package_version = self::get_package_version( self::get_package_name_from_block_name( $ncb_block_meta['name'] ) );
-				if( empty( $ncb_package_version ) && ! empty( $ncb_block_meta['version'] ) ) {
+				if ( empty( $ncb_package_version ) && ! empty( $ncb_block_meta['version'] ) ) {
 					$ncb_package_version = esc_attr( $ncb_block_meta['version'] );
-				} else if ( empty( $ncb_package_version ) ) {
+				} elseif ( empty( $ncb_package_version ) ) {
 					$ncb_package_version = filemtime( $ncb_community . '/style.css' );
 				}
 
@@ -164,6 +163,7 @@ class Frontend {
 					$ncb_name,
 					ncb_mix( 'client/blocks/' . $ncb_file ),
 					[ "ncb-$ncb_theme-tokens" ],
+					// phpcs:ignore WordPress.PHP.DisallowShortTernary.Found
 					self::get_package_version( self::get_package_name_from_block_name( $ncb_name ) ) ?: filemtime( $ncb_shared_block_style )
 				);
 			}
@@ -435,10 +435,12 @@ class Frontend {
 		/*
 		 * Each block that has an icon.
 		 */
-		if ( self::has_block_in_editor_or_widgets( [
-			'ncb-denhaag/accordion',
-			'ncb-denhaag/accordion-item',
-		] ) ) {
+		if ( self::has_block_in_editor_or_widgets(
+			[
+				'ncb-denhaag/accordion',
+				'ncb-denhaag/accordion-item',
+			]
+		) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-chevron-down-icon',
@@ -459,12 +461,14 @@ class Frontend {
 			];
 		}
 
-		if ( self::has_block_in_editor_or_widgets( [
-			'ncb-denhaag/button',
-			'ncb-denhaag/description-list',
-			'ncb-denhaag/paragraph',
-			'ncb-denhaag/link-item',
-		] ) ) {
+		if ( self::has_block_in_editor_or_widgets(
+			[
+				'ncb-denhaag/button',
+				'ncb-denhaag/description-list',
+				'ncb-denhaag/paragraph',
+				'ncb-denhaag/link-item',
+			]
+		) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-external-icon',
@@ -473,7 +477,7 @@ class Frontend {
 			];
 		}
 
-		if ( self::has_block_in_editor_or_widgets( ['ncb-denhaag/button'] ) ) {
+		if ( self::has_block_in_editor_or_widgets( [ 'ncb-denhaag/button' ] ) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-arrow-right-icon',
@@ -489,11 +493,13 @@ class Frontend {
 			];
 		}
 
-		if ( self::has_block_in_editor_or_widgets( [
-			'ncb-denhaag/highlighted-links',
-			'ncb-denhaag/link-group',
-			'ncb-denhaag/link-item',
-		] ) ) {
+		if ( self::has_block_in_editor_or_widgets(
+			[
+				'ncb-denhaag/highlighted-links',
+				'ncb-denhaag/link-group',
+				'ncb-denhaag/link-item',
+			]
+		) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-arrow-right-icon',
@@ -550,11 +556,13 @@ class Frontend {
 			];
 		}
 
-		if ( self::has_block_in_editor_or_widgets( [
-			'ncb-denhaag/social-links',
-			'ncb-denhaag/social-link',
-			'ncb-denhaag/meta',
-		] ) ) {
+		if ( self::has_block_in_editor_or_widgets(
+			[
+				'ncb-denhaag/social-links',
+				'ncb-denhaag/social-link',
+				'ncb-denhaag/meta',
+			]
+		) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-whatsapp-icon',
@@ -742,10 +750,12 @@ class Frontend {
 				return '';
 			}
 
-			$lock = get_object_vars( json_decode(
+			$lock = get_object_vars(
+				json_decode(
 				// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
-				file_get_contents( $lock )
-			) );
+					file_get_contents( $lock )
+				)
+			);
 		}
 
 		if ( ! empty( $lock['dependencies']->{$handle} ) ) {
@@ -764,7 +774,7 @@ class Frontend {
 	 */
 	private static function get_package_name_from_block_name( $string ) {
 
-		if( empty( $string )) {
+		if ( empty( $string ) ) {
 			return null;
 		}
 
@@ -785,12 +795,13 @@ class Frontend {
 
 	/**
 	 * Returns boolean if one of the blocks is on the page.
+	 *
 	 * @param string[] $block_names Array of blocknames.
 	 *
 	 * @return bool
 	 */
 	private static function has_blocks( $block_names ) {
-		if( empty( $block_names ) ) {
+		if ( empty( $block_names ) ) {
 			return false;
 		}
 
@@ -798,10 +809,10 @@ class Frontend {
 			return has_block( $block_names );
 		}
 
-		foreach( $block_names as $block_name) {
+		foreach ( $block_names as $block_name ) {
 			$ncb_has_block = has_block( $block_name );
 
-			if( $ncb_has_block ) {
+			if ( $ncb_has_block ) {
 				return true;
 			}
 		}

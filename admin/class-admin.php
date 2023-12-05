@@ -110,7 +110,7 @@ class Admin {
 
 		if ( is_array( $allowed_block_types ) && is_array( $ncb_block_list ) ) {
 			$allowed_block_types = array_merge( $allowed_block_types, $ncb_block_list );
-		} else if( ! is_array( $allowed_block_types ) && is_array( $ncb_block_list ) ) {
+		} elseif ( ! is_array( $allowed_block_types ) && is_array( $ncb_block_list ) ) {
 			$allowed_block_types = $ncb_block_list;
 		}
 

@@ -1,36 +1,35 @@
 import { RichText } from "@wordpress/block-editor";
-import { useMemo } from "@wordpress/element";
 
 export default function Save( { attributes } ) {
 
-    const _CLASSES = () => {
-        switch( attributes.type ) {
-            case 'video':
-                return {
-                    firstLabel: 'denhaag-cta-link__highlight',
-                    secondLabel:'denhaag-cta-link__label',
-                }
-            case 'link':
-            default:
-                return {
-                    firstLabel: 'denhaag-cta-link__label',
-                    secondLabel: 'denhaag-cta-link__highlight',
-                }
-        }
+    let _CLASSES = {
+        firstLabel: 'denhaag-cta-link__label',
+        secondLabel: 'denhaag-cta-link__highlight'
     };
+
+    if ( 'video' === attributes.type ) {
+        _CLASSES = {
+            firstLabel: 'denhaag-cta-link__highlight',
+            secondLabel: 'denhaag-cta-link__label',
+        };
+    }
 
     return (
         <>
-            <RichText.Content
-                value={ attributes.firstLabel }
-                tagName="span"
-                className={_CLASSES.firstLabel}
-            />
-            <RichText.Content
-                value={ attributes.secondLabel }
-                tagName="span"
-                className={_CLASSES.secondLabel}
-            />
+            { !! attributes.firstLabel && (
+                <RichText.Content
+                    value={ attributes.firstLabel }
+                    tagName="span"
+                    className={ _CLASSES.firstLabel }
+                />
+            ) }
+            { !! attributes.secondLabel && (
+                <RichText.Content
+                    value={ attributes.secondLabel }
+                    tagName="span"
+                    className={ _CLASSES.secondLabel }
+                />
+            ) }
         </>
     );
 }

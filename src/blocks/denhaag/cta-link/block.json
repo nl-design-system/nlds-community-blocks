@@ -15,7 +15,7 @@
     "firstLabel": {
       "type": "string",
       "source": "text",
-      "selector": ".denhaag-cta-link__excerpt span:fist-child"
+      "selector": ".denhaag-cta-link__excerpt span:first-child"
     },
     "secondLabel": {
       "type": "string",
