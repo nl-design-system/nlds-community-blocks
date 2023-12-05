@@ -1,4 +1,4 @@
-import { _x } from '@wordpress/i18n';
+import { sprintf, _x } from '@wordpress/i18n';
 import { ToolbarButton, ToolbarGroup } from '@wordpress/components';
 import { useMemo } from '@wordpress/element';
 import { symbolFilled, symbol } from '@wordpress/icons';

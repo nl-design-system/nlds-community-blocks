@@ -1,6 +1,6 @@
 import { useMemo } from '@wordpress/element';
 import { ToolbarButton } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { sprintf, __ } from '@wordpress/i18n';
 import { ReactComponent as icon } from '../../icons/video-settings.svg';
 
 /**
