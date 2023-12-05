@@ -45,6 +45,7 @@ const NCB_ButtonVariantControl = ({
 				{_VARIATIONS.map((v) => {
 					return (
 						<ToolbarButton
+							key={v.value}
 							onClick={() => setAttributes({ variant: v.value })}
 							icon={v.icon}
 							label={sprintf(

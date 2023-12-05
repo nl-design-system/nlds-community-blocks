@@ -66,6 +66,7 @@ const NCB_ButtonSizeControl = ({
 				{_SIZES.map((s) => {
 					return (
 						<ToolbarButton
+							key={s.value}
 							onClick={() => setAttributes({ size: s.value })}
 							label={sprintf(
 								_x(

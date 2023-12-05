@@ -33,9 +33,10 @@ const NCB_ColumnsLayoutControl = ({
 		if (inToolbar) {
 			return (
 				<ToolbarGroup>
-					{_VARIATIONS.map((item, index) => {
+					{_VARIATIONS.map((item) => {
 						return (
 							<ToolbarButton
+								key={item.name}
 								onClick={() =>
 									setAttributes({
 										layout: item.name,
@@ -54,9 +55,10 @@ const NCB_ColumnsLayoutControl = ({
 
 		return (
 			<ButtonGroup>
-				{_VARIATIONS.map((item, index) => {
+				{_VARIATIONS.map((item) => {
 					return (
 						<Button
+							key={item.name}
 							onClick={() =>
 								setAttributes({
 									layout: item.name,
