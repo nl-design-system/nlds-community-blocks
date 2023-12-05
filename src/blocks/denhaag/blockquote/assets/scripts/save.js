@@ -1,6 +1,4 @@
 import { RichText } from '@wordpress/block-editor';
-import classNames from 'classnames';
-import { _x } from '@wordpress/i18n';
 
 export default function Save({ attributes }) {
 	return (

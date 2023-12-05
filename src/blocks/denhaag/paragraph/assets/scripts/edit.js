@@ -10,12 +10,7 @@ import { PanelBody } from '@wordpress/components';
 import NCB_ParagraphVariationToolbarControl from './controls/ncb-paragraph-variation-toolbar-control';
 import NCB_ParagraphVariationControl from './controls/ncb-paragraph-variation-control';
 
-export default function Edit({
-	attributes,
-	setAttributes,
-	mergeBlocks,
-	clientId,
-}) {
+export default function Edit({ attributes, setAttributes, mergeBlocks }) {
 	/**
 	 * Return string of classNames which updates based on the variation.
 	 *
