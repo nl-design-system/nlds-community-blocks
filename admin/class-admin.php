@@ -42,7 +42,7 @@ class Admin {
 			$script_asset = require $script_asset_path;
 		} else {
 			// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
-			error_log( 'nlds-community-blocks (index.asset.php) isn`t found. Forgot to run `npm run build`?' );
+			error_log( 'nlds-community-blocks (index.asset.php) isn`t found. Forgot to run `pnpm run build`?' );
 
 			return false;
 		}

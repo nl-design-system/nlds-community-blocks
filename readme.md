@@ -11,7 +11,7 @@ https://developer.wordpress.org/block-editor/packages/packages-scripts/
 
 1. Upload the `nlds-community-blocks` folder to the `/wp-content/plugins/` directory.
 2. `cd /wp-contents/plugins/nlds-community-blocks`
-3. `npm install && npm run build`
+3. `pnpm install && pnpm run build`
 4. Activate the NL Design System Community Blocks plugin through the 'Plugins' menu in WordPress.
 
 ### Composer installation
@@ -19,7 +19,7 @@ https://developer.wordpress.org/block-editor/packages/packages-scripts/
 1. `composer config repositories.nlds-community-blocks github https://github.com/nl-design-system/nlds-community-blocks`
 2. `composer require nl-design-system/nlds-community-blocks`
 3. `cd /wp-contents/plugins/nlds-community-blocks`
-4. `npm install && npm run build`
+4. `pnpm install && pnpm run build`
 5. Activate the NL Design System Community Blocks plugin through the 'Plugins' menu in WordPress.
 
 ## Coding Standards
@@ -48,4 +48,4 @@ cd languages && wp i18n make-json nlds-community-blocks-nl_NL.po --no-purge
 
 For the latest building commands check the package.json.
 
-We have a watch command for the WordPress blocks and its assets. Due to the lack of support of the WP Block watcher we're calling the `npm run start`, for the assets we run `npm run start-assets`.
+We have a watch command for the WordPress blocks and its assets. Due to the lack of support of the WP Block watcher we're calling the `pnpm run start`, for the assets we run `pnpm run start-assets`.

@@ -11,65 +11,83 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout branch
-              uses: actions/checkout@v3
+            - name: Download code from GitHub
+              uses: actions/checkout@v4.1.1
+
+            - name: Install pnpm package manager
+              uses: pnpm/action-setup@v2.4.0
+              with:
+                  version: 8.14
 
             - name: Set up Node.js version
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4.0.1
               with:
-                  node-version: '20'
+                  node-version-file: .nvmrc
+                  cache: pnpm
 
             - name: Install dependencies
               run: |
-                  npm ci
-                  npm ls
+                  pnpm install
+                  pnpm ls
 
     lint:
         runs-on: ubuntu-latest
         needs: install
 
         steps:
-            - name: Checkout branch
-              uses: actions/checkout@v3
+            - name: Download code from GitHub
+              uses: actions/checkout@v4.1.1
+
+            - name: Install pnpm package manager
+              uses: pnpm/action-setup@v2.4.0
+              with:
+                  version: 8.14
 
             - name: Set up Node.js version
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4.0.1
               with:
-                  node-version: '20'
+                  node-version-file: .nvmrc
+                  cache: pnpm
 
             - name: Install dependencies
               run: |
-                  npm ci
+                  pnpm install
 
             - name: 'Continuous Integration: lint'
               run: |
-                  npm run --if-present lint
+                  pnpm run --if-present lint
 
     build:
         runs-on: ubuntu-latest
         needs: install
 
         steps:
-            - name: Checkout branch
-              uses: actions/checkout@v3
+            - name: Download code from GitHub
+              uses: actions/checkout@v4.1.1
+
+            - name: Install pnpm package manager
+              uses: pnpm/action-setup@v2.4.0
+              with:
+                  version: 8.14
 
             - name: Set up Node.js version
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4.0.1
               with:
-                  node-version: '20'
+                  node-version-file: .nvmrc
+                  cache: pnpm
 
             - name: Install dependencies
               run: |
-                  npm ci
+                  pnpm install
 
             - name: 'Continuous Integration: build'
               env:
                   BASE_URL: '/utrecht/'
               run: |
-                  npm run --if-present build
+                  pnpm run --if-present build
 
             - name: 'Retain build artifact: build'
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4.3.0
               with:
                   name: nlds-community-blocks
                   path: '@nl-design-system-community/nlds-community-blocks.zip'
@@ -80,21 +98,27 @@ jobs:
         needs: install
 
         steps:
-            - name: Checkout branch
-              uses: actions/checkout@v3
+            - name: Download code from GitHub
+              uses: actions/checkout@v4.1.1
+
+            - name: Install pnpm package manager
+              uses: pnpm/action-setup@v2.4.0
+              with:
+                  version: 8.14
 
             - name: Set up Node.js version
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4.0.1
               with:
-                  node-version: '20'
+                  node-version-file: .nvmrc
+                  cache: pnpm
 
             - name: Install dependencies
               run: |
-                  npm ci
+                  pnpm install
 
             - name: 'Continuous Integration: test'
               run: |
-                  npm run --if-present test
+                  pnpm run --if-present test
 
     publish:
         runs-on: ubuntu-latest
@@ -103,7 +127,7 @@ jobs:
 
         steps:
             - name: 'Restore build artifact: build'
-              uses: actions/download-artifact@v3
+              uses: actions/download-artifact@v4.3.0
               with:
                   name: nlds-community-blocks
                   path: '@nl-design-system-community/nlds-community-blocks.zip'

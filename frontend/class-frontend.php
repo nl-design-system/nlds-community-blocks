@@ -93,7 +93,7 @@ class Frontend {
 	public function enqueue_block_assets() {
 		if ( ! Plugin::has_resource( NCB_ABSPATH . NCB_ASSETS_DIR . 'mix-manifest.json' ) ) {
 			// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
-			error_log( 'nlds-community-blocks (mix-manifest.json) isn`t found. Forgot to run `npm run build` or `npx mix build --production` ?' );
+			error_log( 'nlds-community-blocks (mix-manifest.json) isn`t found. Forgot to run `pnpm run build` or `pnpm exec mix build --production` ?' );
 
 			return false;
 		}
