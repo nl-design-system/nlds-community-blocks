@@ -20,13 +20,13 @@ This plugin adds Gutenberg blocks that implement the NL Design System to the Wor
 
 1. Upload the `nlds-community-blocks` folder to the `/wp-content/plugins/` directory.
 2. `cd /wp-contents/plugins/nlds-community-blocks`
-3. `npm install && npm run build`
+3. `pnpm install && pnpm run build`
 4. Activate the NL Design System Community Gutenberg Blocks plugin through the 'Plugins' menu in WordPress.
 
 === Composer installation ===
 1. `composer config repositories.nlds-community-blocks github https://github.com/nl-design-system/nlds-community-blocks`
 2. `composer require nl-design-system/nlds-community-blocks`
-3. `npm install && npm run build`
+3. `pnpm install && pnpm run build`
 4. Activate the NL Design System Community Gutenberg Blocks plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
