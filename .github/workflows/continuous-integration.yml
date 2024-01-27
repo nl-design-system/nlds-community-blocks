@@ -127,7 +127,7 @@ jobs:
 
         steps:
             - name: 'Restore build artifact: build'
-              uses: actions/download-artifact@v4.3.0
+              uses: actions/download-artifact@v4.1.1
               with:
                   name: nlds-community-blocks
                   path: '@nl-design-system-community/nlds-community-blocks.zip'
