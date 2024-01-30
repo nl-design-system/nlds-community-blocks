@@ -6,7 +6,7 @@ Tested up to: 6.1
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: EUPL-1.2
-License URI: http://www.gnu.org/licenses/gpl.html
+License URI: https://eupl.eu/1.2/en
 
 Adds NL Design System Community Blocks to the Gutenberg editor.
 
