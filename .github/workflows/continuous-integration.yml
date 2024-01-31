@@ -133,6 +133,9 @@ jobs:
               with:
                   version: 8.14
 
+            - name: Install dependencies
+              uses: php-actions/composer@v6
+
             - name: Set up Node.js version
               uses: actions/setup-node@v4.0.1
               with:
@@ -146,6 +149,10 @@ jobs:
             - name: 'Continuous Integration: test'
               run: |
                   pnpm run --if-present test
+
+            - name: 'Continuous Integration: test PHP'
+              run: |
+                  ./vendor/bin/phpunit src/
 
     publish:
         runs-on: ubuntu-latest
