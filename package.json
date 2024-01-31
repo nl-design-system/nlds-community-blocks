@@ -35,7 +35,10 @@
 		"pnpm": "^8"
 	},
 	"scripts": {
-		"build": "wp-scripts build src/blocks/index.js && mix build --production && wp-scripts plugin-zip",
+		"build": "pnpm run build:blocks && pnpm run build:mix && pnpm run build:zip",
+		"build:blocks": "wp-scripts build src/blocks/index.js",
+		"build:mix": "mix build --production",
+		"build:zip": "wp-scripts plugin-zip",
 		"build-assets": "mix build --production",
 		"format": "npm-run-all --sequential format:** prettier",
 		"format:css": "stylelint --allow-empty-input --fix '**/*.{css,scss}'",
