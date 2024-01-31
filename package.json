@@ -52,6 +52,7 @@
 		"start": "wp-scripts start src/blocks/index.js",
 		"start-assets": "mix watch",
 		"packages-update": "wp-scripts packages-update",
+		"test": "jest --outputFile=dist/.jest-test-results.json",
 		"test-update": "pnpm run --if-present lint && pnpm run --if-present test && pnpm run --if-present build && pnpm run --if-present lint-build && pnpm run --if-present test-build",
 		"update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs",
 		"update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
