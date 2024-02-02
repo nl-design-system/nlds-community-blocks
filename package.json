@@ -48,7 +48,11 @@
 		"prettier": "prettier --write .",
 		"start": "wp-scripts start src/blocks/index.js",
 		"start-assets": "mix watch",
-		"packages-update": "wp-scripts packages-update"
+		"packages-update": "wp-scripts packages-update",
+		"test-update": "pnpm run --if-present lint && pnpm run --if-present test && pnpm run --if-present build && pnpm run --if-present lint-build && pnpm run --if-present test-build",
+		"update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs --deep --dep dev,prod --target patch --upgrade && pnpm install",
+		"update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs --deep --dep dev,prod --target minor --upgrade && pnpm install",
+		"update-major": "npm-check-updates --configFileName .ncurc.major.cjs --deep --dep dev,prod --target latest --upgrade && pnpm install"
 	},
 	"devDependencies": {
 		"@wordpress/eslint-plugin": "14.12.0",
@@ -60,6 +64,7 @@
 		"eslint-plugin-react": "7.33.2",
 		"fs": "0.0.1-security",
 		"laravel-mix": "6.0.49",
+		"npm-check-updates": "16.14.14",
 		"npm-package-json-lint": "7.1.0",
 		"npm-run-all": "4.1.5",
 		"path": "0.12.7",
