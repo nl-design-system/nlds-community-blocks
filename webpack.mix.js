@@ -1,6 +1,6 @@
 const mix = require('laravel-mix'),
-	fs = require('fs'),
-	path = require('path');
+	fs = require('node:fs'),
+	path = require('node:path');
 
 const ALLOWED_FILES = ['.scss', 'client.js'];
 const MIX_OPTIONS = {
