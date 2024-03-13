@@ -50,9 +50,9 @@
 		"start-assets": "mix watch",
 		"packages-update": "wp-scripts packages-update",
 		"test-update": "pnpm run --if-present lint && pnpm run --if-present test && pnpm run --if-present build && pnpm run --if-present lint-build && pnpm run --if-present test-build",
-		"update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs --deep --dep dev,prod --target patch --upgrade && pnpm install",
-		"update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs --deep --dep dev,prod --target minor --upgrade && pnpm install",
-		"update-major": "npm-check-updates --configFileName .ncurc.major.cjs --deep --dep dev,prod --target latest --upgrade && pnpm install"
+		"update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs",
+		"update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
+		"update-major": "npm-check-updates --configFileName .ncurc.major.cjs"
 	},
 	"devDependencies": {
 		"@wordpress/eslint-plugin": "17.7.0",
