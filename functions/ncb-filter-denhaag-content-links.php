@@ -159,6 +159,6 @@ if ( ! function_exists( 'ncb_filter_denhaag_content_links' ) ) {
 			}
 		}
 
-		return $ncb_html_dom->saveHTML();
+		return trim($ncb_html_dom->saveHTML());
 	}
 }
