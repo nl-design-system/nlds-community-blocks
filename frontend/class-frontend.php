@@ -773,22 +773,22 @@ class Frontend {
 	/**
 	 * Ge the package name from the block name.
 	 *
-	 * @param string $string The name of the block.
+	 * @param string $block_name The name of the block.
 	 *
 	 * @return string|null
 	 */
-	private static function get_package_name_from_block_name( $string ) {
+	private static function get_package_name_from_block_name( string $block_name ): ?string {
 
-		if ( empty( $string ) ) {
+		if ( empty( $block_name ) ) {
 			return null;
 		}
 
-		if ( str_starts_with( $string, '@gemeente-' ) ) {
+		if ( str_starts_with( $block_name, '@gemeente-' ) ) {
 			// Probably already formatted to the correct format.
-			return $string;
+			return $block_name;
 		}
 
-		preg_match( '/ncb-([a-zA-Z]+)[\/-]([a-zA-Z-]+)/i', $string, $matches );
+		preg_match( '/ncb-([a-zA-Z]+)[\/-]([a-zA-Z-]+)/i', $block_name, $matches );
 
 		if ( empty( $matches ) || empty( $matches[1] ) || empty( $matches[2] ) ) {
 			return null;

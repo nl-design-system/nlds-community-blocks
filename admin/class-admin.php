@@ -100,6 +100,7 @@ class Admin {
 	public function enqueue_settings_page_assets(): void {
 		global $pagenow;
 
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Just checking on which admin page we are.
 		if ( 'options-general.php' !== $pagenow || ! isset( $_GET['page'] ) || $_GET['page'] !== $this->settings_page['slug'] ) {
 			return;
 		}
@@ -108,7 +109,12 @@ class Admin {
 			return;
 		}
 
-		wp_enqueue_style( $this->settings_page['slug'], esc_url( NCB_ASSETS_URL ) . 'admin/settings-page.css' );
+		wp_enqueue_style(
+			$this->settings_page['slug'],
+			esc_url( NCB_ASSETS_URL ) . 'admin/settings-page.css',
+			[],
+			filemtime( NCB_ABSPATH . NCB_ASSETS_DIR . 'admin/settings-page.css' ) ?? NCB_VERSION
+		);
 	}
 
 	/**
@@ -337,7 +343,7 @@ class Admin {
 
 		$this->selected_blocks = (array) get_option( 'ncb_allowed_blocks', [] );
 
-		// Sort the outer array by keys
+		// Sort the outer array by keys.
 		ksort( $ncb_core_blocks );
 
 		foreach ( $ncb_core_blocks as &$core_block_groups ) {
@@ -386,7 +392,7 @@ class Admin {
 					esc_attr( $ncb_block_name ),
 					esc_attr( $ncb_block['title'] ),
 					! empty( $this->selected_blocks ) && in_array( $ncb_block_name, $this->selected_blocks, true ) ? 'checked' : '',
-					$ncb_block['description'],
+					esc_attr( $ncb_block['description'] ),
 				);
 			endforeach;
 
@@ -400,9 +406,9 @@ class Admin {
 	 * @return array
 	 */
 	private static function get_custom_blocks_meta(): array {
-
 		$ncb_blocks_to_return = [];
 		foreach ( glob( NCB_ABSPATH . NCB_ASSETS_DIR . 'blocks/*/*/block.json' ) as $ncb_block_meta_file ) {
+			// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents -- We need to read the file, which is from this plugin.
 			$block = json_decode( file_get_contents( $ncb_block_meta_file ), false );
 			$ncb_blocks_to_return[ $block->category ][ $block->name ] = [
 				'title'       => $block->title ?? '',
@@ -435,7 +441,7 @@ class Admin {
 	/**
 	 * Return the title of the block category.
 	 *
-	 * @param string $slug The slug of the category
+	 * @param string $slug The slug of the category.
 	 *
 	 * @source https://developer.wordpress.org/reference/functions/get_default_block_categories/
 	 *
@@ -459,7 +465,7 @@ class Admin {
 	/**
 	 * Return the title of the block category of the custom blocks.
 	 *
-	 * @param string $slug The slug of the category
+	 * @param string $slug The slug of the category.
 	 *
 	 * @source https://developer.wordpress.org/reference/functions/get_default_block_categories/
 	 *
@@ -468,6 +474,7 @@ class Admin {
 	private static function get_custom_block_category_labels( string $slug ): string {
 		// Start duplicate code from class-frontend.php, need to refactor this.
 
+		// phpcs:ignore Generic.Commenting.Todo.TaskFound -- Before production this has to be done.
 		// @todo: Check how to re-use `register_custom_block_category` from class-frontend.php .
 		$ncb_categories = [
 			[

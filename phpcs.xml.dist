@@ -36,6 +36,8 @@
     <!-- WPCS 3 -->
     <rule ref="WordPress">
         <exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+        <exclude name="Universal.Operators.DisallowShortTernary.Found"/>
+
     </rule>
 
     <!-- Optional: enforce short arrays. -->
@@ -58,7 +60,6 @@
 	https://github.com/PHPCompatibility/PHPCompatibility
 	-->
 	<config name="testVersion" value="8"/>
-
 
 	<!--
 	To get the optimal benefits of using WPCS, we should add a couple of

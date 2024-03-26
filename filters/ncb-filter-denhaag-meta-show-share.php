@@ -12,12 +12,11 @@
  *
  * @param bool   $state     The default state.
  * @param string $post_type Post types we want to allow.
- * @param int    $post_id   The post ID.
  *
  * @return bool
  */
-function ncb_filter_denhaag_meta_show_share( bool $state, string $post_type = 'post', int $post_id = 0 ) {
+function ncb_filter_denhaag_meta_show_share( bool $state, string $post_type = 'post' ): bool {
 	return in_array( esc_attr( $post_type ), [ 'post' ], true );
 }
 
-add_filter( 'ncb_denhaag_meta_show_share', 'ncb_filter_denhaag_meta_show_share', 10, 3 );
+add_filter( 'ncb_denhaag_meta_show_share', 'ncb_filter_denhaag_meta_show_share', 10, 2 );
