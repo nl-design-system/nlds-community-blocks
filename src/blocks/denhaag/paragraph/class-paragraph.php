@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Register the Paragraph Block.
  *
@@ -13,6 +14,8 @@
 namespace Nlds_Community_Blocks\Src\Blocks\Denhaag;
 
 use Nlds_Community_Blocks\Includes\Base_Block;
+
+require_once('Paragraph.php');
 
 /**
  * The Paragraph class.
@@ -35,20 +38,7 @@ class Paragraph extends Base_Block {
 	 */
 	public function render_block( $attributes, $content ) {
 
-		if ( ! empty( $content ) ) {
-
-			// phpcs:ignore Generic.Commenting.Todo.TaskFound
-			// @todo: the `ncb_filter_denhaag_content_links()` must be applied to the REST endpoint.
-
-			// Filter for links within the content.
-			$content = ncb_filter_denhaag_content_links( $content );
-		}
-
-		ob_start();
-		include __DIR__ . '/template.php';
-		$output = ob_get_clean();
-
-		return $output;
+		return render_paragraph($attributes, $content);
 	}
 }
 
