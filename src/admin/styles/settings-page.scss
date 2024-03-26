@@ -1,0 +1,29 @@
+.nlds-community-blocks-settings__legend {
+	font-size: 1.125em;
+	font-weight: bold;
+}
+
+.nlds-community-blocks-settings__fieldset {
+	& + fieldset {
+		margin-block-start: 2em;
+	}
+}
+
+.form-table td fieldset label.nlds-community-blocks-settings__label {
+		margin: 0 !important;
+}
+
+.nlds-community-blocks-settings__list {
+	margin-block: 0;
+}
+
+.nlds-community-blocks-settings__list-item {
+	display: flex;
+	gap: 0.5em;
+	margin-bottom: 0; // Overwrite default margin.
+	padding-block: 0.5em;
+}
+
+.nlds-community-blocks-settings__input {
+	margin: 2px 0 0 0!important;
+}

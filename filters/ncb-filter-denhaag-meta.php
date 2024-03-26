@@ -30,11 +30,3 @@ function ncb_filter_denhaag_meta( array $array = [], string $post_type = 'post',
 }
 
 add_filter( 'ncb_denhaag_meta', 'ncb_filter_denhaag_meta', 10, 3 );
-
-
-
-
-
-
-
-

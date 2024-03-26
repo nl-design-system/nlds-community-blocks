@@ -75,7 +75,7 @@ class Plugin {
 	private function set_locale() {
 		$plugin_i18n = new I18n();
 
-		add_action( 'plugins_loaded', array( $plugin_i18n, 'load_plugin_textdomain' ) );
+		add_action( 'plugins_loaded', [ $plugin_i18n, 'load_plugin_textdomain' ] );
 	}
 
 	/**
@@ -100,6 +100,7 @@ class Plugin {
 
 		$frontend = new Frontend();
 		add_action( 'admin_head', [ $frontend, 'ncb_action_community_icons_based_on_block' ] );
+		add_action( 'admin_enqueue_scripts', [ $admin, 'enqueue_settings_page_assets' ] );
 	}
 
 	/**
@@ -120,7 +121,7 @@ class Plugin {
 		add_filter( 'body_class', [ $frontend, 'ncb_body_class_by_community_theme' ] );
 		add_action( 'wp_head', [ $frontend, 'ncb_action_community_icons_based_on_block' ] );
 
-		$ncb_theme = esc_attr( get_option( 'ncb_municipality', 'denhaag' ) );
+		$ncb_theme = esc_attr( get_option( 'ncb_organisation', '' ) );
 		switch ( $ncb_theme ) {
 			case 'denhaag':
 				add_filter( 'wp_kses_allowed_html', [ $frontend, 'ncb_denhaag_extend_wp_kses_posts' ] );

@@ -33,7 +33,7 @@ function ncb_filter_denhaag_meta_accordion_allowed_blocks( array $blocks = [], s
 		'ncb-denhaag/table',
 
 		// Core components we allow.
-		'core/list'
+		'core/list',
 	];
 
 	return array_unique( array_merge( $blocks, $ncb_blocks ) );

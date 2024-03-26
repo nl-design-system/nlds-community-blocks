@@ -25,7 +25,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 require_once plugin_dir_path( __FILE__ ) . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'class-autoloader.php';
-spl_autoload_register( array( '\Nlds_Community_Blocks\Includes\Autoloader', 'autoload' ) );
+spl_autoload_register( [ '\Nlds_Community_Blocks\Includes\Autoloader', 'autoload' ] );
 
 // Make sure global functions are loaded.
 foreach ( glob( plugin_dir_path( __FILE__ ) . DIRECTORY_SEPARATOR . 'functions' . DIRECTORY_SEPARATOR . '*.php' ) as $ncb_plugin_functions ) {

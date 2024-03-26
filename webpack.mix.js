@@ -155,6 +155,7 @@ const NCB_build_client = (folder, outputFolder = folder) => {
 
 NCB_build_blocks('src/blocks', 'blocks');
 NCB_build_client('src/client', 'client');
+NCB_build_client('src/admin', 'admin');
 
 mix.webpackConfig({
 	resolve: {

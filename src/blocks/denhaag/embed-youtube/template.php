@@ -43,7 +43,7 @@ $ncb_attributes = [
 	'class'           => [ 'denhaag-embed-youtube' ],
 	'loading'         => 'lazy',
 	'src'             => "https://www.youtube-nocookie.com/embed/$ncb_video_id?" . http_build_query( $ncb_url_attributes ),
-	'title' => ! empty( $attributes['description'] )
+	'title'           => ! empty( $attributes['description'] )
 		? sprintf( 'YouTube video: %s', esc_attr( $attributes['description'] ) )
 		: esc_attr_x( 'YouTube Video', 'denhaag/embed-youtube title', 'nlds-community-blocks' ),
 	'allowfullscreen' => null,
@@ -54,5 +54,3 @@ if ( ! empty( $attributes['portrait'] ) ) {
 }
 
 printf( '<iframe %s></iframe>', ncb_to_dom_attributes( $ncb_attributes ) );
-
-

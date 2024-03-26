@@ -23,11 +23,3 @@ function ncb_filter_denhaag_meta_buttons( string $post_type = 'post', int $post_
 }
 
 add_filter( 'ncb_denhaag_meta_buttons', 'ncb_filter_denhaag_meta_buttons', 10, 2 );
-
-
-
-
-
-
-
-
