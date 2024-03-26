@@ -181,4 +181,3 @@ if ( ! function_exists( 'ncb_file_get_contents' ) ) {
 		return false;
 	}
 }
-

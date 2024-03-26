@@ -10,13 +10,11 @@
 /**
  * Return boolean based on post types we want to allow to show the Share buttons.
  *
- * @param array  $blocks    The allowed innerBlocks.
- * @param string $post_type Post types we want to allow.
- * @param int    $post_id   The post ID.
+ * @param array $blocks    The allowed innerBlocks.
  *
- * @return bool
+ * @return array
  */
-function ncb_filter_denhaag_meta_accordion_allowed_blocks( array $blocks = [], string $post_type = 'post', int $post_id = 0 ) {
+function ncb_filter_denhaag_meta_accordion_allowed_blocks( array $blocks = [] ):array {
 	$ncb_blocks = [
 		'ncb-denhaag/authentication',
 		'ncb-denhaag/button-group',
@@ -33,10 +31,10 @@ function ncb_filter_denhaag_meta_accordion_allowed_blocks( array $blocks = [], s
 		'ncb-denhaag/table',
 
 		// Core components we allow.
-		'core/list'
+		'core/list',
 	];
 
 	return array_unique( array_merge( $blocks, $ncb_blocks ) );
 }
 
-add_filter( 'ncb_denhaag_meta_accordion_allowed_blocks', 'ncb_filter_denhaag_meta_accordion_allowed_blocks', 10, 3 );
+add_filter( 'ncb_denhaag_meta_accordion_allowed_blocks', 'ncb_filter_denhaag_meta_accordion_allowed_blocks', 10, 1 );

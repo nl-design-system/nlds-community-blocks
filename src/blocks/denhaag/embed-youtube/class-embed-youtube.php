@@ -81,7 +81,6 @@ class Embed_YouTube extends Base_Block {
 		preg_match( "/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user|shorts)\/))([^\?&\"'>]+)/", $input, $matches );
 		return end( $matches );
 	}
-
 }
 
 new Embed_YouTube();

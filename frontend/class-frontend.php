@@ -38,7 +38,6 @@ class Frontend {
 	 * @return array Array of block categories.
 	 */
 	public function register_custom_block_category( $categories ) {
-
 		$ncb_categories = [
 			[
 				'slug'  => 'nlds-community-blocks',
@@ -51,7 +50,6 @@ class Frontend {
 				'icon'  => null,
 			],
 		];
-
 
 		foreach ( glob( NCB_ABSPATH . NCB_ASSETS_DIR . 'blocks/*', GLOB_ONLYDIR ) as $ncb_community_path ) {
 			if ( empty( $ncb_community_path ) ) {
@@ -98,7 +96,7 @@ class Frontend {
 			return false;
 		}
 
-		$ncb_theme = esc_attr( get_option( 'ncb_municipality', 'denhaag' ) );
+		$ncb_theme = esc_attr( get_option( 'ncb_organisation', '' ) );
 		if ( ! empty( $ncb_theme ) && Plugin::has_resource( NCB_ABSPATH . NCB_ASSETS_DIR . "client/tokens/ncb-$ncb_theme-tokens.css" ) ) {
 			wp_enqueue_style(
 				"ncb-$ncb_theme-tokens",
@@ -125,9 +123,9 @@ class Frontend {
 
 				// Get block version, priority to package-lock.json version.
 				$ncb_package_version = self::get_package_version( self::get_package_name_from_block_name( $ncb_block_meta['name'] ) );
-				if( empty( $ncb_package_version ) && ! empty( $ncb_block_meta['version'] ) ) {
+				if ( empty( $ncb_package_version ) && ! empty( $ncb_block_meta['version'] ) ) {
 					$ncb_package_version = esc_attr( $ncb_block_meta['version'] );
-				} else if ( empty( $ncb_package_version ) ) {
+				} elseif ( empty( $ncb_package_version ) ) {
 					$ncb_package_version = filemtime( $ncb_community . '/style.css' );
 				}
 
@@ -318,12 +316,19 @@ class Frontend {
 	/**
 	 * Set <body> class based on the selected theme.
 	 *
-	 * @param {array} $classes An array of classes.
+	 * @param string|string[] $classes An array of classes.
 	 *
-	 * @return mixed
+	 * @source https://developer.wordpress.org/reference/functions/body_class/
+	 *
+	 * @return array
 	 */
-	public function ncb_body_class_by_community_theme( $classes ) {
-		$ncb_theme = esc_attr( get_option( 'ncb_municipality', 'denhaag' ) );
+	public function ncb_body_class_by_community_theme( mixed $classes ): array {
+
+		if ( is_string( $classes ) ) {
+			$classes = explode( ' ', $classes );
+		}
+
+		$ncb_theme = esc_attr( get_option( 'ncb_organisation', '' ) );
 		if ( ! empty( $ncb_theme ) ) {
 			$classes[] = "$ncb_theme-theme";
 		}
@@ -435,10 +440,12 @@ class Frontend {
 		/*
 		 * Each block that has an icon.
 		 */
-		if ( self::has_block_in_editor_or_widgets( [
-			'ncb-denhaag/accordion',
-			'ncb-denhaag/accordion-item',
-		] ) ) {
+		if ( self::has_block_in_editor_or_widgets(
+			[
+				'ncb-denhaag/accordion',
+				'ncb-denhaag/accordion-item',
+			]
+		) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-chevron-down-icon',
@@ -459,12 +466,14 @@ class Frontend {
 			];
 		}
 
-		if ( self::has_block_in_editor_or_widgets( [
-			'ncb-denhaag/button',
-			'ncb-denhaag/description-list',
-			'ncb-denhaag/paragraph',
-			'ncb-denhaag/link-item',
-		] ) ) {
+		if ( self::has_block_in_editor_or_widgets(
+			[
+				'ncb-denhaag/button',
+				'ncb-denhaag/description-list',
+				'ncb-denhaag/paragraph',
+				'ncb-denhaag/link-item',
+			]
+		) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-external-icon',
@@ -473,7 +482,7 @@ class Frontend {
 			];
 		}
 
-		if ( self::has_block_in_editor_or_widgets( ['ncb-denhaag/button'] ) ) {
+		if ( self::has_block_in_editor_or_widgets( [ 'ncb-denhaag/button' ] ) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-arrow-right-icon',
@@ -489,11 +498,13 @@ class Frontend {
 			];
 		}
 
-		if ( self::has_block_in_editor_or_widgets( [
-			'ncb-denhaag/highlighted-links',
-			'ncb-denhaag/link-group',
-			'ncb-denhaag/link-item',
-		] ) ) {
+		if ( self::has_block_in_editor_or_widgets(
+			[
+				'ncb-denhaag/highlighted-links',
+				'ncb-denhaag/link-group',
+				'ncb-denhaag/link-item',
+			]
+		) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-arrow-right-icon',
@@ -550,11 +561,13 @@ class Frontend {
 			];
 		}
 
-		if ( self::has_block_in_editor_or_widgets( [
-			'ncb-denhaag/social-links',
-			'ncb-denhaag/social-link',
-			'ncb-denhaag/meta',
-		] ) ) {
+		if ( self::has_block_in_editor_or_widgets(
+			[
+				'ncb-denhaag/social-links',
+				'ncb-denhaag/social-link',
+				'ncb-denhaag/meta',
+			]
+		) ) {
 			$icons['denhaag'][] = [
 				'@type' => 'path',
 				'id'    => 'ncb-denhaag-whatsapp-icon',
@@ -742,10 +755,12 @@ class Frontend {
 				return '';
 			}
 
-			$lock = get_object_vars( json_decode(
+			$lock = get_object_vars(
+				json_decode(
 				// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
-				file_get_contents( $lock )
-			) );
+					file_get_contents( $lock )
+				)
+			);
 		}
 
 		if ( ! empty( $lock['dependencies']->{$handle} ) ) {
@@ -758,22 +773,22 @@ class Frontend {
 	/**
 	 * Ge the package name from the block name.
 	 *
-	 * @param string $string The name of the block.
+	 * @param string $block_name The name of the block.
 	 *
 	 * @return string|null
 	 */
-	private static function get_package_name_from_block_name( $string ) {
+	private static function get_package_name_from_block_name( string $block_name ): ?string {
 
-		if( empty( $string )) {
+		if ( empty( $block_name ) ) {
 			return null;
 		}
 
-		if ( str_starts_with( $string, '@gemeente-' ) ) {
+		if ( str_starts_with( $block_name, '@gemeente-' ) ) {
 			// Probably already formatted to the correct format.
-			return $string;
+			return $block_name;
 		}
 
-		preg_match( '/ncb-([a-zA-Z]+)[\/-]([a-zA-Z-]+)/i', $string, $matches );
+		preg_match( '/ncb-([a-zA-Z]+)[\/-]([a-zA-Z-]+)/i', $block_name, $matches );
 
 		if ( empty( $matches ) || empty( $matches[1] ) || empty( $matches[2] ) ) {
 			return null;
@@ -785,12 +800,13 @@ class Frontend {
 
 	/**
 	 * Returns boolean if one of the blocks is on the page.
+	 *
 	 * @param string[] $block_names Array of blocknames.
 	 *
 	 * @return bool
 	 */
 	private static function has_blocks( $block_names ) {
-		if( empty( $block_names ) ) {
+		if ( empty( $block_names ) ) {
 			return false;
 		}
 
@@ -798,10 +814,10 @@ class Frontend {
 			return has_block( $block_names );
 		}
 
-		foreach( $block_names as $block_name) {
+		foreach ( $block_names as $block_name ) {
 			$ncb_has_block = has_block( $block_name );
 
-			if( $ncb_has_block ) {
+			if ( $ncb_has_block ) {
 				return true;
 			}
 		}

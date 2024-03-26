@@ -126,7 +126,7 @@ if ( ! empty( $ncb_buttons['share'] ) ) {
 						echo '<hr class="denhaag-divider denhaag-divider--vertical" role="presentation" />';
 					}
 
-					$ncb_meta_counter ++;
+					++$ncb_meta_counter;
 				endforeach;
 				?>
 			</div>

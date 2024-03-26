@@ -24,6 +24,25 @@
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found"/>
 	</rule>
 
+    <!-- WPCS 2 -->
+    <rule ref="WordPress">
+        <exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+    </rule>
+
+    <!-- Optional: enforce short arrays. -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax.Found"/>
+
+    <!-- WPCS 3 -->
+    <rule ref="WordPress">
+        <exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+        <exclude name="Universal.Operators.DisallowShortTernary.Found"/>
+
+    </rule>
+
+    <!-- Optional: enforce short arrays. -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+
 	<!-- Let's also check that everything is properly documented. -->
 	<rule ref="WordPress-Docs"/>
 
@@ -40,8 +59,7 @@
 	For more information, also see:
 	https://github.com/PHPCompatibility/PHPCompatibility
 	-->
-	<config name="testVersion" value="7.4-"/>
-	
+	<config name="testVersion" value="8"/>
 
 	<!--
 	To get the optimal benefits of using WPCS, we should add a couple of
@@ -52,7 +70,7 @@
 	the wiki:
 	https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties
 	-->
-	<config name="minimum_supported_wp_version" value="5.9"/>
+	<config name="minimum_supported_wp_version" value="6"/>
 
 	<rule ref="WordPress.Security.EscapeOutput">
 		<properties>
@@ -86,8 +104,6 @@
 	<exclude-pattern>*/build/*</exclude-pattern>
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
-
 	<exclude-pattern>*.js</exclude-pattern>
 	<exclude-pattern>*.css</exclude-pattern>
-
 </ruleset>
