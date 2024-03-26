@@ -99,7 +99,7 @@ class Frontend {
 		}
 
 		$ncb_theme = esc_attr( get_option( 'ncb_municipality', 'denhaag' ) );
-		if ( ! empty( $ncb_theme ) && Plugin::has_resource( NCB_ABSPATH . NCB_ASSETS_DIR . "client/tokens/ncb-$ncb_theme-tokens.css" ) ) {
+		if ( ! empty( $ncb_theme ) && 'none' !== $ncb_theme && Plugin::has_resource( NCB_ABSPATH . NCB_ASSETS_DIR . "client/tokens/ncb-$ncb_theme-tokens.css" ) ) {
 			wp_enqueue_style(
 				"ncb-$ncb_theme-tokens",
 				ncb_mix( "client/tokens/ncb-$ncb_theme-tokens.css" ),
