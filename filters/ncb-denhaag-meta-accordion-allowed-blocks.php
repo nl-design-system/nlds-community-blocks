@@ -12,9 +12,9 @@
  *
  * @param array $blocks    The allowed innerBlocks.
  *
- * @return bool
+ * @return array
  */
-function ncb_filter_denhaag_meta_accordion_allowed_blocks( array $blocks = [] ): bool {
+function ncb_filter_denhaag_meta_accordion_allowed_blocks( array $blocks = [] ):array {
 	$ncb_blocks = [
 		'ncb-denhaag/authentication',
 		'ncb-denhaag/button-group',
