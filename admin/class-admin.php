@@ -234,6 +234,9 @@ class Admin {
 			$nlds_community_blocks_municipalities[ $ncb_community ] = ucfirst( $ncb_community );
 		}
 
+		// Add a none option.
+		$nlds_community_blocks_municipalities['none'] = esc_html__( 'None', 'nlds-community-blocks' );
+
 		// Output the field.
 		foreach ( $nlds_community_blocks_municipalities as $value => $label ) {
 			echo '<label><input type="radio" name="ncb_municipality" value="' . esc_attr( $value ) . '" ' . checked( $value, $ncb_selected_municipality, false ) . '> ' . esc_html( $label ) . '</label><br/>';
