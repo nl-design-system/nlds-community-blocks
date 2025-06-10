@@ -1,22 +1,27 @@
 version: 2
+
 updates:
-    # Maintain dependencies for GitHub Actions
-    - package-ecosystem: 'github-actions'
-      schedule:
-          interval: 'monthly'
-          day: 'monday'
-          time: '07:00'
-
-    # Maintain dependencies for npm (Node.js)
-    - package-ecosystem: 'npm'
-      schedule:
-          interval: 'monthly'
-          day: 'monday'
-          time: '07:00'
-
-    # Maintain dependencies for Composer (PHP)
-    - package-ecosystem: 'composer'
-      schedule:
-          interval: 'monthly'
-          day: 'monday'
-          time: '07:00'
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      patch-and-minor-updates:
+        applies-to: "version-updates"
+        update-types:
+          - "patch"
+          - "minor"
+    ignore:
+      - dependency-name: "@types/node"
+        update-types:
+          - "version-update:semver-major"
+    versioning-strategy: "increase-if-necessary"
+    open-pull-requests-limit: 20
